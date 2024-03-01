@@ -1,12 +1,18 @@
 
-import './App.css';
+
+import YieldExcessPage from "./pages/YieldExcessPage/YieldExcessPage";
+
 
 function App() {
-  return (
-    <div>
-      Welcome GoviSewana
-    </div>
-  );
+    return (
+        <div>
+            
+            <YieldExcessPage/>
+          
+
+        </div>
+    );
 }
 
 export default App;
+
