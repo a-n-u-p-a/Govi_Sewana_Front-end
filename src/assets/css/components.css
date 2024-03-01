@@ -1,0 +1,52 @@
+.input-label {
+    width: 70%;
+    height: 45px;
+    margin-top: 20px;
+    /* margin-left: 2%; */
+}
+
+.input-label-text{
+    font-size:16px;
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+    height: 50px;
+    /* border: 2px solid #3D5712; */
+    border-radius: 10px;
+    
+}
+
+input {
+    padding-left: 30px;
+    height: 50px;
+    width: 450px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+
+.icon {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+
+.custom_button {
+    width: 280px;
+    margin-top: 8%;
+    height: 45px;
+    background-color: #027A48;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.link_txt{
+    text-decoration: none;
+}  
+
