@@ -1,19 +1,13 @@
-// import OtpPage from "./pages/OtpPage/OtpPage";
-
-import YieldExcessPage from "./pages/YieldExcessPage/YieldExcessPage";
-
+import logo from "./logo.svg";
+import "./App.css";
+import Recomendation from "./pages/Recomendation.js";
 
 function App() {
-    return (
-        <div>
-             {/* <OtpPage/> */}
-            <YieldExcessPage/>
-
-          
-
-        </div>
-    );
+  return (
+    <>
+      <Recomendation></Recomendation>
+    </>
+  );
 }
 
 export default App;
-
