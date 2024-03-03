@@ -1,11 +1,12 @@
-
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Recomendation from "./pages/Recomendation.js";
 
 function App() {
   return (
-    <div>
-      Welcome GoviSewana
-    </div>
+    <>
+      <Recomendation></Recomendation>
+    </>
   );
 }
 
