@@ -1,13 +1,11 @@
-import logo from "./logo.svg";
-import "./App.css";
-import Recomendation from "./pages/Recomendation.js";
+import './App.css';
+import './assets/css/responsive.css';
+import RootRoutes from "./routes/rootRoutes";
 
 function App() {
-  return (
-    <>
-      <Recomendation></Recomendation>
-    </>
-  );
+    return (
+        <RootRoutes/>
+    );
 }
 
 export default App;
