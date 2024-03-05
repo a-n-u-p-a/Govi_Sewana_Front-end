@@ -1,21 +1,11 @@
-// import OtpPage from "./pages/OtpPage/OtpPage";
-
-import YieldExcessPage from "./pages/YieldExcessPage/YieldExcessPage";
-import SignUpPage from "./pages/SignUpPage/SignUpPage";
-import SignInPage from "./pages/SignInPage/SignInPage";
+import './App.css';
+import './assets/css/responsive.css';
+import RootRoutes from "./routes/rootRoutes";
 
 function App() {
     return (
-        <div>
-             {/* <OtpPage/> */}
-            <YieldExcessPage/>
-            {/* <SignUpPage/>  */}
-             {/* <SignInPage/> */}
-
-        
-        </div>
+        <RootRoutes/>
     );
 }
 
 export default App;
-

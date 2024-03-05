@@ -1,9 +1,8 @@
 import React from "react";
-import '../assets/css/components.css';
 
-const CustomButton = ({BTN_NAME, STYLE}) => {
+const CustomButton = ({CLASS_NAME, BTN_NAME, STYLE, ON_CLICK}) => {
     return (
-        <button className={"custom_button"} style={STYLE}>
+        <button className={CLASS_NAME} style={STYLE} onClick={ON_CLICK}>
             {BTN_NAME}
         </button>
     )
