@@ -88,6 +88,91 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
+/* -------footer------ */
+.fo_main_section {
+    width: 100vw;
+    height: 20vh;
+}
+
+.fo_top_section {
+    width: 100%;
+    height: 75%;
+    background-image: linear-gradient(to top, #002214, #003420, #00472b, #005b37, #027043);
+}
+
+.fo_bottom_section {
+    width: 100%;
+    height: 25%;
+    background-color: #000c07;
+}
+
+.fo_mid_section {
+    width: 33.2%;
+    height: 100%;
+}
+
+.fo_sub_section1 {
+    width: 25%;
+    height: 100%;
+}
+
+.foLogo {
+    height: 50%;
+    margin-left: 40%;
+}
+
+.fo_p {
+    color: white;
+}
+
+.fo_icons {
+    color: white;
+}
+
+.fo_social_section {
+    width: 90%;
+    height: 35%;
+    color: white;
+}
+
+.fo_social_icon {
+    margin: 10px;
+    color: white;
+}
+
+.fo_social_title {
+    width: 30%;
+    height: 100%;
+}
+
+.fo_social_content {
+    width: 50%;
+    height: 100%;
+}
+
+.fo_bottom_sub1 {
+    width: 70%;
+    height: 100%;
+}
+
+.fo_bottom_sub2 {
+    width: 30%;
+    height: 100%;
+}
+
+.fo_btn {
+    margin: 2%;
+    color: white;
+}
+
 .bgGreen {
     background-color: lightseagreen !important;
 }

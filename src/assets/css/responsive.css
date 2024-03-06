@@ -38,25 +38,7 @@
         font-size: 0.7rem !important;
     }
 
-    /*WELCOME SCREEN -------------------------------------------------------------------------------------------------*/
-    .wel_name_logo {
-        height: 80px !important;
-    }
-
-    .custom_title_section {
-        font-size: 0.7rem;
-        text-align: center;
-    }
-
-    .wel_title_1 {
-        font-size: 2rem !important;
-    }
-
-    .wel_title_2 {
-        font-size: 1rem !important;
-    }
-    /*WELCOME SCREEN -------------------------------------------------------------------------------------------------*/
-
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -105,41 +87,6 @@
     .sign_p {
         font-size: 0.6rem !important;
     }
-
-    /*WELCOME SCREEN -------------------------------------------------------------------------------------------------*/
-    .wel_main_section {
-        width: 100vw;
-        height: 100vh;
-        background-color: red;
-        flex-direction: column;
-    }
-
-    .wel_side_section {
-        width: 100vw !important;
-        height: 50% !important;
-        flex-direction: column !important;
-    }
-
-    .wel_logo {
-        height: 50px !important;
-    }
-
-    .wel_name_logo {
-        height: 60px !important;
-    }
-
-    .custom_title_section {
-        font-size: 0.6rem;
-    }
-
-    .wel_title_1 {
-        font-size: 1.5rem !important;
-    }
-
-    .wel_title_2 {
-        font-size: 0.9rem !important;
-    }
-    /*WELCOME SCREEN -------------------------------------------------------------------------------------------------*/
 
 }
 
