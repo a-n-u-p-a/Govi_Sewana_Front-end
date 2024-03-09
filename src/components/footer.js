@@ -9,12 +9,14 @@ const Footer = () => {
         <div className="container fo_main_section flex_col">
 
             <div className={"fo_top_section flex_center"}>
+
                 <div className={"fo_mid_section flex_align"}>
                     <div className={"fo_sub_section1 flex_center"}>
                         <img src={foLogo} alt={foLogo} className={"foLogo"}/>
                     </div>
                     <h2 className={"fo_p"}>GoviSewana</h2>
                 </div>
+
                 <div className={"fo_mid_section"}>
                     <p className="fo_p"><FontAwesomeIcon icon={faMapMarkerAlt} className="fo_icons"/>&nbsp;&nbsp;345
                         Faulconer Drive, Suite 4 •
@@ -25,7 +27,9 @@ const Footer = () => {
                         <FontAwesomeIcon icon={faPhone} className="fo_icons"/>&nbsp;+94 766 760 760
                     </p>
                 </div>
+
                 <div className={"fo_mid_section flex_center flex_col"}>
+
                     <div className={"fo_social_section flex_center"}>
 
                         <div className={"fo_social_title flex_align"}>
@@ -39,6 +43,7 @@ const Footer = () => {
                             <p className="fo_social_icon"><FaYoutube/></p>
                         </div>
                     </div>
+
                     <div className={"fo_social_section flex_center"}>
 
                         <div className={"fo_social_title flex_align"}>
@@ -49,6 +54,7 @@ const Footer = () => {
                             <p className="fo_social_icon">govisewana@gmail.com</p>
                         </div>
                     </div>
+
                 </div>
             </div>
 
