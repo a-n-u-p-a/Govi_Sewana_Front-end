@@ -38,6 +38,8 @@ h1, h2, h3, h4, h5, h6, p, a, input {
 }
 
 /*COMPONENTS ==========================================================================================================*/
+
+/* -----------------customButton component------------------------------------- */
 .customButton {
     width: 100%;
     height: 100%;
@@ -47,6 +49,7 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     border-radius: 10px;
 }
 
+/* ---------------------customInput component------------------------*/
 .customInput {
     width: 100%;
     height: 100%;
@@ -81,25 +84,27 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     margin-left: -20px;
 }
 
-.custom_title_section {
-    width: 80%;
-    height: 7%;
-    color: white;
-    text-align: center;
+/*------------------otp------------------------------------------ */
+.customOtpBoxMainSection {
+    width: 90%;
+    height: 90%;
 }
 
+.customOtpBox {
+    width: 80%;
+    height: 100%;
+}
+/* -------------------otp--------------------------------- */
 
 
+/* -------footer----------------------------------------------------------------------------------------------------------------------- */
 
 
-
-
-
-
-/* -------footer------ */
 .fo_main_section {
-    width: 100vw;
-    height: 20vh;
+    width: 100%;
+    height: 100%;
+    font-size: 0.9rem;
+    font-weight: 200 !important;
 }
 
 .fo_top_section {
@@ -172,6 +177,128 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     margin: 2%;
     color: white;
 }
+/* -------footer----------------------------------------------------------------------------------------------------------------------- */
+
+/*----cropYieldPrediction comp --------------------*/
+
+/* yield pred page */
+.crop-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    background-color: #5c8b7a;
+    width: 96%;
+    height: auto;
+}
+/* yield pred page */
+
+.crop-form {
+    margin-bottom: 20px;
+}
+
+.crop-input-group {
+    margin-bottom: 10px;
+    flex: 1;
+}
+
+.crop_space1 {
+    margin-left: 10px;
+}
+
+.crop_select_custom {
+    height: 40px;
+}
+
+.crop-label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+.crop-input,
+.crop-select {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 8px;
+    width: 150px;
+}
+
+.crop-button {
+    background-color: #5c8b7b;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px 10px;
+    width: 200px;
+    margin-top: 1.5%;
+    cursor: pointer;
+}
+
+.crop-result {
+    flex: 1;
+    background-color: #5c8b7b;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.crop_space {
+    width: 1%;
+}
+/*----cropYieldPrediction comp --------------------*/
+
+
+/*table============================*/
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+.table-header {
+    background-color: #ccc;
+}
+
+.table-cell {
+    border: 1px solid #ffffff;
+    padding: 8px;
+}
+
+.table-body {
+    text-align: center;
+}
+
+.excess-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 20px;
+    width: 90px;
+}
+
+.arrow-icon {
+    margin-right: 5px;
+}
+
+.excess-green {
+    background-color: rgba(0, 128, 0, 0.3);
+    color: #006400;
+}
+
+.excess-red {
+    background-color: rgba(255, 0, 0, 0.3);
+    color: #ff0000;
+}
+
+.excess-blue {
+    background-color: rgba(0, 0, 255, 0.3);
+    color: #0000ff;
+}
+/*table===========================*/
+
 
 .bgGreen {
     background-color: lightseagreen !important;
