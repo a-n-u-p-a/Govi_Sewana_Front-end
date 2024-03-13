@@ -9,11 +9,11 @@ import {useNavigate} from "react-router-dom";
 
 const SignIn = ({goToSignUp}) => {
 
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
-    const goToOtp = () => {
-        navigate('/otp', {replace: true})
-    }
+    // const goToOtp = () => {
+    //     navigate('/otp', {replace: true})
+    // }
 
     return (
         <div className={"container sign_main_section flex_col"}>
@@ -24,7 +24,9 @@ const SignIn = ({goToSignUp}) => {
             </div>
 
             <div className={"signIn_button_section flex_center"}>
-                <CustomButton BTN_NAME={"Sign In"} CLASS_NAME={"customButton"} ON_CLICK={goToOtp}/>
+                <CustomButton BTN_NAME={"Sign In"} CLASS_NAME={"customButton"}
+                //  ON_CLICK={goToOtp}
+                 />
             </div>
 
             <div className={"signUp_button_section"}>

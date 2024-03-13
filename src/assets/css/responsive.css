@@ -5,90 +5,116 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-device-width: 601px) and (max-device-width: 768px) {
+
+    /*AUTHENTICATION =================================================================================================*/
     .auth_side_section {
         width: 100%;
-    }
-
-    .auth_left_header h2 {
-        margin-left: 3%;
-    }
-
-    .sign_main_section h1 {
-        font-size: 1.5rem;
-    }
-
-    .customInputField {
-        height: 40px;
-    }
-
-    .signIn_button_section {
-        height: 6%;
-    }
-
-    .customInputLabel {
-        height: 35px !important;
-    }
-
-    .signUp_button_section {
-        height: 6%;
-    }
-
-    .sign_p {
-        font-size: 0.7rem !important;
-    }
-
-    
-}
-
-@media only screen and (max-width: 600px) {
-    .auth_side_section {
-        width: 100%;
-    }
-
-    .auth_img {
-        height: 50% !important;
-        margin-top: -50%;
-    }
-
-    .auth_icon {
-        height: 70% !important;
     }
 
     .auth_left_header {
-        margin-top: 20%;
+        margin-top: 50%;
     }
 
     .auth_left_header h2 {
-        margin-left: 3%;
-        font-size: 1rem;
+        margin-left: 5%;
+    }
+
+    .auth_icon {
+        width: auto;
+        height: 80% !important;
     }
 
     .auth_p_rev {
-        font-size: 0.7rem !important;
+        font-size: 0.9rem !important;
+    }
+
+    .auth_img {
+        margin-bottom: 60%;
+        height: 50% !important;
     }
 
     .sign_main_section h1 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
+    .sign_text_section {
+        width: 80% !important;
+        height: 10% !important;
+    }
+
+
     .customInputField {
-        height: 35px !important;
+        font-size: 0.8rem;
     }
 
     .signIn_button_section {
-        height: 5% !important;
+        height: 6% !important;
     }
 
     .signUp_button_section {
-        height: 5% !important;
+        height: 6% !important;
     }
 
     .sign_p {
-        font-size: 0.6rem !important;
+        font-size: 0.8rem !important;
     }
 
+    /*AUTHENTICATION =================================================================================================*/
+
 }
+
+@media only screen and (max-width: 600px) {
+
+    /*AUTHENTICATION =================================================================================================*/
+    .auth_main_section {
+        flex-direction: column;
+    }
+
+    .auth_side_section {
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    .auth_icon {
+        width: auto;
+        height: 100% !important;
+    }
+
+    .auth_img {
+        margin-top: 2%;
+        height: 80% !important;
+    }
+
+    .sign_main_section {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .sign_main_section h1 {
+        font-size: 0.9rem;
+    }
+
+    .customInputField {
+        font-size: 0.7rem;
+    }
+
+    .signIn_button_section {
+        height: 8% !important;
+    }
+
+    .signUp_button_section {
+        height: 8% !important;
+    }
+
+    .sign_p {
+        font-size: 0.5rem !important;
+    }
+
+    /*AUTHENTICATION =================================================================================================*/
+}
+
+
 
 @media only screen and (max-width: 485px) {
     .auth_side_section {
@@ -210,8 +236,87 @@
     .sign_p {
         font-size: 0.5rem !important;
     }
+    /*AUTHENTICATION =================================================================================================*/
 }
 
+
+/*OTP / */
+@media only screen and (min-device-width: 1201px) and (max-device-width: 1535px) {
+    /*OTP ============================================================================================================*/
+    .ot_top_section {
+        width: 90% !important;
+    }
+    .ot_img{
+        height: 55% !important;
+    }
+    /*OTP ============================================================================================================*/
+
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1200px) {
+    /*OTP ============================================================================================================*/
+    .ot_top_section {
+        flex-direction: column;
+    }
+
+    .otp_side_section{
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    .ot_img{
+        height: 75% !important;
+    }
+
+    .otp_p {
+        margin-top: -8%;
+    }
+
+    .otp_box_section {
+        height: 20% !important;
+    }
+
+    .otp_button_section {
+        height: 15% !important;
+    }
+
+    .otp_p2{
+        font-size: 1rem;
+    }
+    .otp_footer_section{
+        width: 100% !important;
+    }
+    /*OTP ============================================================================================================*/
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    /*OTP ============================================================================================================*/
+    .ot_top_section {
+        flex-direction: column;
+    }
+
+    .otp_side_section{
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    .ot_img{
+        height: 60% !important;
+    }
+
+    .otp_p {
+        margin-top: -10%;
+    }
+
+    .otp_p2{
+        font-size: 0.9rem;
+    }
+    .otp_footer_section{
+        width: 100% !important;
+    }
+    /*OTP ============================================================================================================*/
+
+}
 
 
 /*RESPONSIVE =========================================================================================================*/

@@ -58,7 +58,7 @@ const data = {
     ],
 }
 
-const pricePrediction = () => {
+const PricePrediction = () => {
 
 
     return (
@@ -89,4 +89,4 @@ const pricePrediction = () => {
 }
 
 
-export default pricePrediction;
+export default PricePrediction;
