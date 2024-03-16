@@ -1,13 +1,18 @@
 import React from "react";
-import Authentication from "../pages/auth/authentication";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Welcome from "../pages/welcome/welcome";
+
+
+
 
 const RootRoutes = () => {
     return (
-        <>
-            <Welcome/>
-            {/*<Authentication/>*/}
-        </>
+        <Router>
+            <Routes>
+                <Route path="/" element={<Welcome/>}/>
+
+            </Routes>
+        </Router>
     )
 }
 

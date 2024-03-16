@@ -1,43 +1,451 @@
 /*RESPONSIVE =========================================================================================================*/
 @media only screen and (max-width: 1024px) {
     .customInputLabel {
-        height: 30px !important;
+        height: 45% !important;
+    }
+}
+
+
+/*Recommend============================*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+    .rec_top_section {
+        font-size: 0.6rem;
+    }
+
+    .rec_card_section {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .rec_card_sub_section {
+        height: auto !important;
+        flex-direction: column !important;
+    }
+
+    .custom_rec_card_section {
+        width: 100%;
+        height: 400px;
+    }
+
+    .custom_card_data {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-device-width: 501px) and (max-device-width: 600px) {
+    .rec_top_section {
+        font-size: 0.7rem;
+    }
+
+    .rec_card_section {
+        display: flex;
+        flex-direction: column !important;
+    }
+
+    .rec_card_sub_section {
+        height: auto !important;
+        flex-direction: column !important;
+    }
+
+    .custom_rec_card_section {
+        width: 80%;
+        height: 400px;
+    }
+}
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 768px) {
+    .rec_top_section {
+        font-size: 0.8rem;
+    }
+
+    .rec_card_sub_section {
+        height: auto !important;
+        flex-direction: column !important;
+    }
+
+    .custom_rec_card_section {
+        width: 50%;
+        height: 400px;
+    }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1000px) {
+    .rec_top_section {
+        font-size: 0.8rem;
+    }
+
+    .custom_rec_card_section {
+        width: 50%;
+        height: 400px;
+    }
+
+    .custom_card_data {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-device-width: 1001px) and (max-device-width: 1100px) {
+    .rec_top_section {
+        font-size: 0.8rem;
+    }
+
+    .custom_rec_card_section {
+        width: 50%;
+        height: 400px;
+    }
+
+    .custom_card_data {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (min-device-width: 1101px) and (max-device-width: 1200px) {
+    .custom_card_data {
+        font-size: 14px;
+    }
+}
+
+/*Recommend============================*/
+
+
+/*PRICE============================*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+    .pre_header {
+        font-size: 10px;
+    }
+
+    .pre_tbl_section {
+        height: 70% !important;
+    }
+
+    .res_chart {
+        height: 50% !important;
+    }
+
+}
+
+/*PRICE============================*/
+
+
+/*CULTIVATION====================================*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 400px) {
+    .cul_header_section {
+        font-size: 10px;
+        width: 90% !important;
+    }
+
+    .cul_content_title {
+        font-size: 10px;
+    }
+
+    .cul_content_section {
+        width: 90% !important;
+    }
+
+    .cul_content_card_section {
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: auto !important;
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+
+    .res_cultivation_card_section {
+        margin-top: 650px;
+    }
+
+    .cul_card_section {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .custom_cul_button {
+        height: 80% !important;
+        margin-bottom: 10px !important;
+    }
+
+}
+
+@media only screen and (min-device-width: 401px) and (max-device-width: 500px) {
+    .cul_header_section {
+        font-size: 10px;
+        width: 90% !important;
+    }
+
+    .cul_content_title {
+        font-size: 12px;
+    }
+
+    .cul_content_section {
+        width: 90% !important;
+    }
+
+    .cul_content_card_section {
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+
+    .res_cultivation_card_section {
+        margin-top: 650px;
+    }
+
+    .cul_card_section {
+        width: 300px !important;
+    }
+
+    .custom_cul_button {
+        height: 70% !important;
+        margin-bottom: 10px !important;
+    }
+
+}
+
+@media only screen and (min-device-width: 501px) and (max-device-width: 600px) {
+    .cul_header_section {
+        font-size: 10px;
+        width: 90% !important;
+    }
+
+    .cul_content_title {
+        font-size: 12px;
+    }
+
+    .cul_content_section {
+        width: 90% !important;
+    }
+
+    .cul_content_card_section {
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+
+    .res_cultivation_card_section {
+        margin-top: 650px;
+    }
+
+    .cul_card_section {
+        width: 300px !important;
+    }
+
+    .custom_cul_button {
+        height: 70% !important;
+        margin-bottom: 10px !important;
+    }
+
+}
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 768px) {
+    .cul_header_section {
+        font-size: 10px;
+        width: 90% !important;
+    }
+
+    .cul_content_title {
+        font-size: 12px;
+    }
+
+    .cul_content_section {
+        width: 90% !important;
+    }
+
+    .cul_content_card_section {
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+
+    .res_cultivation_card_section {
+        margin-top: 650px;
+    }
+
+    .cul_card_section {
+        width: 300px !important;
+    }
+
+    .custom_cul_button {
+        height: 70% !important;
+        margin-bottom: 10px !important;
+    }
+
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
+    .cul_header_section {
+        font-size: 10px;
+        width: 90% !important;
+    }
+
+    .cul_content_title {
+        font-size: 12px;
+    }
+
+    .cul_content_section {
+        width: 90% !important;
+    }
+
+    .custom_cul_img_section {
+        height: 25% !important;
+        margin-top: 10px !important;
+    }
+
+    .cul_content_card_section {
+        height: 90% !important;
+        width: 95% !important;
+    }
+
+    .cul_card_section {
+        width: 100% !important;
+    }
+
+    .custom_cul_button_section {
+        margin-bottom: 20px;
+    }
+
+    .custom_cul_button {
+        height: 25px !important;
+    }
+
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1266px) {
+    .cul_header_section {
+        font-size: 10px;
+        width: 90% !important;
+    }
+
+    .cul_content_title {
+        font-size: 12px;
+    }
+
+    .cul_content_section {
+        width: 90% !important;
+    }
+
+    .custom_cul_img_section {
+        height: 25% !important;
+        margin-top: 10px !important;
+    }
+
+    .cul_content_card_section {
+        height: 90% !important;
+        width: 95% !important;
+    }
+
+    .cul_card_section {
+        width: 100% !important;
+    }
+
+    .custom_cul_button_section {
+        margin-bottom: 20px;
+    }
+
+    .custom_cul_button {
+        height: 25px !important;
+    }
+
+}
+
+/*CULTIVATION====================================*/
+
+
+/*CULTIVATION CONTENT============================*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+
+    .pot_content_main_section{
+        height: 60% !important;
+    }
+
+    .pot_content_header {
+        width: 90% !important;
+        font-size: 10px;
+    }
+
+    .pot_content_section {
+        width: 90% !important;
+        font-size: 10px;
+        height: auto !important;
+    }
+
+    .pot_content_txt {
+        margin-left: 5% !important;
+    }
+
+    .res_cul_detail{
+        width: 90% !important;
+        font-size: 14px;
+    }
+
+    .res_cul_detail_2{
+        border-radius: 15px;
+    }
+
+}
+@media only screen and (min-device-width: 501px) and (max-device-width: 768px) {
+    .pot_content_header {
+        font-size: 10px;
+    }
+
+    .pot_content_section {
+        font-size: 10px;
+    }
+}
+
+/*CULTIVATION CONTENT============================*/
+
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1500px) {
+    /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
+    .acc_side_section {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .acc_form_section {
+        width: 90% !important;
+        height: 70% !important;
+    }
+
+    .acc_top_section {
+        width: 90% !important;
+        height: 40% !important;
+    }
+
+    .acc_view_section {
+        width: 90% !important;
+        height: 50% !important;
+        margin-bottom: 5%;
+    }
+
+    .acc_top_side {
+        width: 50% !important;
+    }
+
+    .acc_bottom_side1 {
+        height: 50% !important;
+    }
+
+    .acc_space3 {
+        height: 5% !important;
+    }
+    /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
+}
+
+@media only screen and (min-device-width: 601px) and (max-device-width: 768px) {
+    .customInputField {
+        font-size: 0.8rem;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .auth_side_section {
-        width: 100%;
-    }
-
-    .auth_left_header h2 {
-        margin-left: 3%;
-    }
-
-    .sign_main_section h1 {
-        font-size: 1.5rem;
-    }
-
-    .customInputField {
-        height: 40px;
-    }
-
-    .signIn_button_section {
-        height: 6%;
-    }
-
-    .customInputLabel {
-        height: 35px !important;
-    }
-
-    .signUp_button_section {
-        height: 6%;
-    }
-
-    .sign_p {
-        font-size: 0.7rem !important;
-    }
-
     /*WELCOME SCREEN -------------------------------------------------------------------------------------------------*/
     .wel_name_logo {
         height: 80px !important;
@@ -55,216 +463,141 @@
     .wel_title_2 {
         font-size: 1rem !important;
     }
-    /*WELCOME SCREEN -------------------------------------------------------------------------------------------------*/
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .main_form_nav_bar_section {
+        width: 0 !important;
+    }
+
+    .nav_main_section {
+        display: none;
+    }
+
+    .nav_open {
+        display: block;
+    }
+
 
 }
 
-@media only screen and (max-width: 600px) {
-    .auth_side_section {
-        width: 100%;
-    }
 
-    .auth_img {
-        height: 50% !important;
-        margin-top: -50%;
-    }
-
-    .auth_icon {
-        height: 70% !important;
-    }
-
-    .auth_left_header {
-        margin-top: 20%;
-    }
-
-    .auth_left_header h2 {
-        margin-left: 3%;
-        font-size: 1rem;
-    }
-
-    .auth_p_rev {
-        font-size: 0.7rem !important;
-    }
-
-    .sign_main_section h1 {
-        font-size: 1.3rem;
-    }
-
-    .customInputField {
-        height: 35px !important;
-    }
-
-    .signIn_button_section {
-        height: 5% !important;
-    }
-
-    .signUp_button_section {
-        height: 5% !important;
-    }
-
-    .sign_p {
-        font-size: 0.6rem !important;
-    }
-
-    /*WELCOME SCREEN -------------------------------------------------------------------------------------------------*/
-    .wel_main_section {
-        width: 100vw;
-        height: 100vh;
-        background-color: red;
-        flex-direction: column;
-    }
-
-    .wel_side_section {
-        width: 100vw !important;
-        height: 50% !important;
-        flex-direction: column !important;
-    }
-
-    .wel_logo {
-        height: 50px !important;
-    }
-
-    .wel_name_logo {
-        height: 60px !important;
-    }
-
-    .custom_title_section {
-        font-size: 0.6rem;
-    }
-
-    .wel_title_1 {
-        font-size: 1.5rem !important;
-    }
-
-    .wel_title_2 {
-        font-size: 0.9rem !important;
-    }
-    /*WELCOME SCREEN -------------------------------------------------------------------------------------------------*/
-
-}
-
-@media only screen and (max-width: 485px) {
-    .auth_side_section {
-        width: 100%;
-    }
-
-    .auth_left_header {
-        margin-top: 30%;
-    }
-
-    .auth_img {
-        height: 45% !important;
-        margin-top: -70%;
-    }
-
-    .auth_icon {
-        height: 70% !important;
-    }
-
-    .auth_left_header h2 {
-        margin-left: 4%;
-        font-size: 1rem;
-    }
-
-    .auth_p_rev {
-        font-size: 0.7rem !important;
-    }
-
-    .sign_main_section h1 {
-        font-size: 1rem;
-    }
-
-    .sign_text_section {
-        height: 13% !important;
-    }
-
-    .customInputLabel {
-        margin-top: 10% !important;
-        height: 30px !important;
-    }
-
-    .signIn_button_section {
-        height: 5% !important;
-        margin-top: 9% !important;
-    }
-
-    .signUp_button_section {
-        height: 5% !important;
-        margin-top: 9% !important;
-    }
-
-    .sign_p {
-        font-size: 0.6rem !important;
-    }
-
-}
-
-@media only screen and (max-width: 390px) {
-    .auth_side_section {
-        width: 100%;
-    }
-
-    .auth_left_header {
-        margin-top: 90%;
-    }
-
-    .auth_img {
-        height: 30% !important;
-        margin-top: -150%;
-    }
-
-    .auth_icon {
-        height: 70% !important;
-    }
-
-    .auth_left_header h2 {
-        margin-left: 4%;
-        font-size: 1rem;
-    }
-
-    .auth_p_rev {
-        font-size: 0.6rem !important;
-    }
-
-    .sign_main_section h1 {
-        font-size: 0.8rem;
-    }
-
-    .sign_text_section {
-        height: 12% !important;
-    }
-
-    .customInputLabel {
-        margin-bottom: 5%;
-    }
-
-    .customInputLabelName {
-        font-size: 0.6rem !important;
-    }
-
-    .customInputSection {
-        margin-top: -10%;
-    }
-
-    .customInputField {
+@media only screen and (min-device-width: 769px) and (max-device-width: 1200px) {
+    .nav_main_section {
         font-size: 0.7rem;
     }
 
-    .signIn_button_section {
-        height: 5% !important;
-        margin-top: 15% !important;
+    .nav_title_section {
+        height: 10%;
     }
 
-    .signUp_button_section {
-        height: 5% !important;
-        margin-top: 10% !important;
+    .nav_title_logo {
+        height: 35%;
     }
 
-    .sign_p {
-        font-size: 0.5rem !important;
+    .nav_profile_img {
+        height: 35%;
+    }
+
+
+}
+
+@media only screen and (min-device-width: 901px) and (max-device-width: 1200px) {
+    .nav_main_section {
+        font-size: 0.8rem;
+    }
+
+    .nav_title_logo {
+        height: 40%;
+    }
+
+    .nav_profile_img {
+        height: 45%;
     }
 }
 
+/*ACCOUNT / */
+@media only screen and (min-device-width: 550px) and (max-device-width: 1024px) {
+    /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
+    .acc_side_section {
+        width: 100% !important;
+        height: 80% !important;
+    }
 
+    .acc_form_section {
+        width: 90% !important;
+        height: 80% !important;
+    }
+
+    .acc_view_section {
+        width: 90% !important;
+        height: 50% !important;
+        margin-top: 5%;
+    }
+
+    .acc_top_section {
+        height: 50% !important;
+    }
+
+    .acc_top_side {
+        width: 45% !important;
+    }
+
+    .acc_bottom_side1 {
+        height: 60% !important;
+    }
+
+    .acc_space3 {
+        height: 10% !important;
+    }
+
+    /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
+}
+
+/*ACCOUNT / */
+@media only screen and (min-device-width: 320px) and (max-device-width: 549px) {
+
+    /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
+    .acc_main_section {
+        flex-direction: column;
+    }
+
+    .acc_side_section {
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    .acc_form_section {
+        width: 80% !important;
+        height: 95% !important;
+    }
+
+    .acc_p {
+        font-size: 16px;
+    }
+
+    .acc_combo_box {
+        font-size: 12px;
+    }
+
+    .accImg {
+        height: 55% !important;
+    }
+
+    .acc_text {
+        font-size: 12px;
+    }
+
+    .acc_space3 {
+        height: 5% !important;
+    }
+
+    .acc_bottom_button_section {
+        height: 10% !important;
+    }
+    /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
+
+}
 
 /*RESPONSIVE =========================================================================================================*/

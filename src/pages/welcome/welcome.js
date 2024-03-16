@@ -1,12 +1,29 @@
-import React from "react";
+import React, {useState} from "react";
 import './welcome.css';
 import wel_Logo from '../../assets/images/logo.png';
 import wel_Name_Logo from '../../assets/images/govisewana.png';
 import CustomTitle from "../../components/customTitle";
 import commonConfig from '../../config/commonConfig.json';
 import CustomButton from "../../components/customButton";
+import {useNavigate} from "react-router-dom";
 
 const Welcome = () => {
+
+    const navigate = useNavigate();
+
+    const [selectedLanguage, setSelectedLanguage] = useState(() => {
+        return localStorage.getItem('selectedLanguage') || 'ENG';
+    });
+
+    const handleSelectChange = (event) => {
+        const newLanguage = event.target.value;
+        setSelectedLanguage(newLanguage);
+        localStorage.setItem('selectedLanguage', newLanguage);
+    }
+
+    const loadingAuth = () => {
+        navigate('/auth', {replace: true})
+    }
 
     return (
         <div className={"container  wel_main_section flex_center"}>
@@ -29,24 +46,27 @@ const Welcome = () => {
             <div className={"wel_side_section wel_bg_color1 flex_center flex_col"}>
 
                 <div className={"wel_select_lang flex_center"}>
-                    <p>Select Language :</p>
-                    <select className={"wel_combo_box"}>
-                        <option value="english">English</option>
-                        <option value="sinhala">Sinhala</option>
-                        <option value="tamil">Tamil</option>
+                    <p>
+                        {commonConfig[selectedLanguage].SELECT_LAN}
+                    </p>
+                    <select className={"wel_combo_box"} value={selectedLanguage} onChange={handleSelectChange}>
+                        <option value="ENG">English</option>
+                        <option value="SIN">Sinhala</option>
+                        <option value="TAM">Tamil</option>
                     </select>
                 </div>
 
-                <h1 className={"wel_title_1"}>Step into the Future of Agriculture </h1>
+                <h1 className={"wel_title_1"}> {commonConfig[selectedLanguage].WELCOME_TITLE} </h1>
 
                 <p className={"wel_title_2"}>
-                    Explore Your Crop Yield Forecast Technologies
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.
+                    {commonConfig[selectedLanguage].WELCOME_P}
                 </p>
 
                 <div className={"wel_button_section"}>
-                    <CustomButton BTN_NAME={"Explore!!"} CLASS_NAME={"customButton wel_button"}/>
+                    <CustomButton
+                        BTN_NAME={commonConfig[selectedLanguage].BTN_EXP}
+                        CLASS_NAME={"customButton wel_button"}
+                        ON_CLICK={loadingAuth}/>
                 </div>
 
 
