@@ -28,7 +28,8 @@ const Otp = () => {
 
     return (
         <div className={"container flex_col otp_main_section"}>
-            <h2> {commonConfig[selectedLanguage].OTP_TITLE}</h2>
+            {/*<h2> {commonConfig[selectedLanguage].OTP_TITLE}</h2>*/}
+            <h2> HELLO </h2>
 
             <div className={"ot_top_section flex_center"}>
 
