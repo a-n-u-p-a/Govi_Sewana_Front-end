@@ -1,12 +1,11 @@
-
 import './App.css';
+import './assets/css/responsive.css';
+import RootRoutes from "./routes/rootRoutes";
 
 function App() {
-  return (
-    <div>
-      Welcome GoviSewana
-    </div>
-  );
+    return (
+        <RootRoutes/>
+    );
 }
 
 export default App;

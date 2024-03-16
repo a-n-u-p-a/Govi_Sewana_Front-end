@@ -1,0 +1,284 @@
+/*RESPONSIVE =========================================================================================================*/
+@media only screen and (max-width: 1024px) {
+    .customInputLabel {
+        height: 30px !important;
+    }
+}
+
+@media only screen and (min-device-width: 1025px) and (max-device-width: 1500px) {
+    /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
+    .acc_side_section {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .acc_form_section {
+        width: 90% !important;
+        height: 70% !important;
+    }
+
+    .acc_top_section {
+        width: 90% !important;
+        height: 40% !important;
+    }
+
+    .acc_view_section {
+        width: 90% !important;
+        height: 50% !important;
+        margin-bottom: 5%;
+    }
+
+    .acc_top_side {
+        width: 50% !important;
+    }
+
+    .acc_bottom_side1 {
+        height: 50% !important;
+    }
+
+    .acc_space3 {
+        height: 5% !important;
+    }
+
+    /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    /*AUTHENTICATION =================================================================================================*/
+    .auth_main_section {
+        flex-direction: column;
+    }
+
+    .auth_side_section {
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    .auth_icon {
+        width: auto;
+        height: 100% !important;
+    }
+
+    .auth_img {
+        margin-top: 2%;
+        height: 80% !important;
+    }
+
+    .sign_main_section {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .sign_main_section h1 {
+        font-size: 0.9rem;
+    }
+
+    .customInputField {
+        font-size: 0.7rem;
+    }
+
+    .signIn_button_section {
+        height: 8% !important;
+    }
+
+    .signUp_button_section {
+        height: 8% !important;
+    }
+
+    .sign_p {
+        font-size: 0.5rem !important;
+    }
+
+    /*AUTHENTICATION =================================================================================================*/
+    /*WELCOME SCREEN -------------------------------------------------------------------------------------------------*/
+    .wel_main_section {
+        width: 100vw;
+        height: 100vh;
+        background-color: red;
+        flex-direction: column;
+    }
+
+    .wel_side_section {
+        width: 100vw !important;
+        height: 50% !important;
+        flex-direction: column !important;
+    }
+
+    .wel_logo {
+        height: 50px !important;
+    }
+
+    .wel_name_logo {
+        height: 60px !important;
+    }
+
+    .custom_title_section {
+        font-size: 0.6rem;
+    }
+
+    .wel_title_1 {
+        font-size: 1.5rem !important;
+    }
+
+    .wel_title_2 {
+        font-size: 0.9rem !important;
+    }
+
+    /*WELCOME SCREEN -------------------------------------------------------------------------------------------------*/
+}
+
+/*ACCOUNT / */
+@media only screen and (min-device-width: 901px) and (max-device-width: 1024px) {
+    /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
+    .acc_side_section {
+        width: 100% !important;
+        height: 80% !important;
+    }
+
+    .acc_form_section {
+        width: 90% !important;
+        height: 80% !important;
+    }
+
+    .acc_view_section {
+        width: 90% !important;
+        height: 50% !important;
+        margin-top: 5%;
+    }
+
+    .acc_top_section {
+        height: 50% !important;
+    }
+
+    .acc_top_side {
+        width: 45% !important;
+    }
+
+    .acc_bottom_side1 {
+        height: 60% !important;
+    }
+
+    .acc_space3 {
+        height: 10% !important;
+    }
+
+    /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
+}
+
+
+/*ACCOUNT / */
+@media only screen and (min-device-width: 601px) and (max-device-width: 900px) {
+
+    /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
+    .acc_main_section {
+        flex-direction: column;
+    }
+
+    .acc_side_section {
+        width: 90% !important;
+        height: 50% !important;
+    }
+
+    .acc_form_section {
+        width: 80% !important;
+        height: 95% !important;
+    }
+
+    .acc_p {
+        font-size: 16px;
+        margin-bottom: 7%;
+    }
+
+    .acc_combo_box {
+        font-size: 12px;
+    }
+
+    .acc_top_side {
+        width: 40% !important;
+        height: 100%;
+        background-color: #9ecbb9;
+        border-radius: 25px;
+    }
+
+    .acc_top_side1 {
+        width: 60% !important;
+    }
+
+    .accImg {
+        height: 80%;
+    }
+
+    .acc_button_section {
+        height: 9% !important;
+    }
+
+    .acc_bottom_side1 {
+        height: 90% !important;
+    }
+
+    .acc_text {
+        font-size: 12px;
+    }
+
+    .acc_space3 {
+        height: 5% !important;
+    }
+
+    .acc_bottom_button_section {
+        height: 8% !important;
+    }
+
+    /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
+}
+
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+
+    /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
+    .acc_main_section {
+        flex-direction: column;
+    }
+
+    .acc_side_section {
+        width: 100% !important;
+        height: 50% !important;
+    }
+
+    .acc_form_section {
+        width: 80% !important;
+        height: 95% !important;
+    }
+
+    .acc_p {
+        font-size: 16px;
+    }
+
+    .acc_combo_box {
+        font-size: 12px;
+    }
+
+    .accImg {
+        height: 55% !important;
+    }
+
+    .acc_text {
+        font-size: 12px;
+    }
+
+    .acc_space3 {
+        height: 5% !important;
+    }
+
+    .acc_bottom_button_section {
+        height: 10% !important;
+    }
+
+    /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
+
+}
+/*RESPONSIVE =========================================================================================================*/
