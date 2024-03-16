@@ -1,24 +1,10 @@
-import React, {useEffect} from "react";
-import {useState} from "react";
-import commonConfig from '../config/commonConfig.json';
+import React from "react";
 import foLogo from '../assets/images/logo.png';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { faMapMarkerAlt, faPhone} from '@fortawesome/free-solid-svg-icons';
 import {FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube} from 'react-icons/fa';
 
 const Footer = () => {
-
-    const [selectedLanguage, setSelectedLanguage] = useState(() => {
-        return localStorage.getItem('selectedLanguage') || 'ENG';
-    });
-
-    useEffect(() => {
-        const langValue = localStorage.getItem('selectedLanguage');
-        if (langValue !== null) {
-            setSelectedLanguage(langValue)
-        }
-    }, []);
-
     return (
         <div className="container fo_main_section flex_col">
 
@@ -28,23 +14,26 @@ const Footer = () => {
                     <div className={"fo_sub_section1 flex_center"}>
                         <img src={foLogo} alt={foLogo} className={"foLogo"}/>
                     </div>
-                    <h2 className={"fo_p"}>{commonConfig[selectedLanguage].GOVI_TITLE}</h2>
+                    <h2 className={"fo_p"}>GoviSewana</h2>
                 </div>
-                <div className={"fo_mid_section fo_address"}>
-                    <p className="fo_p"><FontAwesomeIcon icon={faMapMarkerAlt} className="fo_icons"/>&nbsp;&nbsp;
-                        {commonConfig[selectedLanguage].ADDRESS}
+
+                <div className={"fo_mid_section"}>
+                    <p className="fo_p"><FontAwesomeIcon icon={faMapMarkerAlt} className="fo_icons"/>&nbsp;&nbsp;345
+                        Faulconer Drive, Suite 4 •
+                        Bambalapitiya, Sri Lanka
                     </p>
 
                     <p className="fo_p">
                         <FontAwesomeIcon icon={faPhone} className="fo_icons"/>&nbsp;+94 766 760 760
                     </p>
                 </div>
+
                 <div className={"fo_mid_section flex_center flex_col"}>
 
                     <div className={"fo_social_section flex_center"}>
 
                         <div className={"fo_social_title flex_align"}>
-                            <p className="">{commonConfig[selectedLanguage].SOCIAL_MEDIA}</p>
+                            <p className="">Social Media : </p>
                         </div>
 
                         <div className={"fo_social_content flex_align"}>
@@ -58,7 +47,7 @@ const Footer = () => {
                     <div className={"fo_social_section flex_center"}>
 
                         <div className={"fo_social_title flex_align"}>
-                            <p className="">{commonConfig[selectedLanguage].EMAIL_NAME}</p>
+                            <p className="">Email Us : </p>
                         </div>
 
                         <div className={"fo_social_content flex_align"}>
@@ -67,20 +56,19 @@ const Footer = () => {
                     </div>
 
                 </div>
-
             </div>
 
             <div className={"fo_bottom_section flex_center"}>
 
                 <div className={"fo_bottom_sub1 flex_align"}>
-                    <p className={"fo_btn"}>{commonConfig[selectedLanguage].ABOUT_US}</p>
-                    <p className={"fo_btn"}>{commonConfig[selectedLanguage].CONTACT_US}</p>
-                    <p className={"fo_btn"}>{commonConfig[selectedLanguage].HELP}</p>
-                    <p className={"fo_btn"}>{commonConfig[selectedLanguage].PRIV_POLICY}</p>
-                    <p className={"fo_btn"}>{commonConfig[selectedLanguage].DISCLAIMER}</p>
+                    <p className={"fo_btn"}>ABOUT US</p>
+                    <p className={"fo_btn"}>CONTACT US</p>
+                    <p className={"fo_btn"}>HELP</p>
+                    <p className={"fo_btn"}>PRIVACY POLICY</p>
+                    <p className={"fo_btn"}>DISCLAIMER</p>
                 </div>
                 <div className={"fo_bottom_sub2 flex_center"}>
-                    <p className="fo_btn">{commonConfig[selectedLanguage].COPY_RIGHT}</p>
+                    <p className="fo_btn">Copyright © 2023. GoviSewana.ltd</p>
                 </div>
 
             </div>

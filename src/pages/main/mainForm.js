@@ -80,9 +80,6 @@ const MainForm = () => {
             <div className={"main_form_content_section"}>
                 {renderPage()}
 
-                <div className={"main_form_footer"}>
-                    <Footer/>
-                </div>
 
             </div>
         </div>
