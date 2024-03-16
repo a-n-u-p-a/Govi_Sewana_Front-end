@@ -57,11 +57,12 @@ const PotatoesContent = ({onChangePage}) => {
             <div className={"pot_content_section"}>
 
                 <h2 className={"pot_content_txt"} style={{marginTop: "3%"}} onClick={selectSoil}> - {commonConfig[selectedLanguage].SOIL} </h2>
-                <h2 className={"pot_content_txt"} onClick={selectPlanting}> - {commonConfig[selectedLanguage].DISTANCE_PLANTS_AND_PLANTING_SEEDS } </h2>
-                <h2 className={"pot_content_txt"} onClick={selectFer}> - {commonConfig[selectedLanguage].FERTILIZING}</h2>
-                <h2 className={"pot_content_txt"} onClick={selectRECOMMEND}> -{commonConfig[selectedLanguage].RECOMMENDED_SPECIES}  </h2>
-                <h2 className={"pot_content_txt"} onClick={selectDISEASES}> -{commonConfig[selectedLanguage].DISEASES_AND_PESTICIDES}   </h2>
-                <h2 className={"pot_content_txt"} onClick={selectHARVESTING}> - {commonConfig[selectedLanguage].HARVESTING} </h2>
+                <h2 className={"pot_content_txt"} onClick={selectPlanting}> - DISTANCE BETWEEN PLANTS AND PLANTING
+                    SEEDS </h2>
+                <h2 className={"pot_content_txt"} onClick={selectFer}> - FERTILIZING </h2>
+                <h2 className={"pot_content_txt"} onClick={selectRECOMMEND}> - RECOMMENDED SPECIES </h2>
+                <h2 className={"pot_content_txt"} onClick={selectDISEASES}> - DISEASES AND PESTICIDES </h2>
+                <h2 className={"pot_content_txt"} onClick={selectHARVESTING}> - HARVESTING </h2>
 
             </div>
 
