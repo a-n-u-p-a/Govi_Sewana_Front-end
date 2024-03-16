@@ -5,7 +5,7 @@ const CustomInput = ({LABEL_NAME, PLACEHOLDER, icon, STYLE}) => {
     const IconComponent = icon;
 
     return (
-        <div className={"customInput flex_center flex_col"}>
+        <div className={"customInput flex_center flex_col res_custom_input"}>
 
             <div className={"customInputLabel"}>
                 <p className={"customInputLabelName"} style={STYLE}>{LABEL_NAME}</p>
