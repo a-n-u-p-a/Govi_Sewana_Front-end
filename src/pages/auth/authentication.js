@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React, {useEffect, useState} from "react";
 import './authentication.css';
 import authLogo from '../../assets/images/logo.png';
 import authImage from '../../assets/images/auth-bg.png';
 import SignUp from "../signUp/signUp";
 import SignIn from "../signIn/signIn";
+import commonConfig from '../../config/commonConfig.json';
 
 const Authentication = () => {
 
@@ -17,6 +18,17 @@ const Authentication = () => {
         setShowPage(false);
     };
 
+    const [selectedLanguage, setSelectedLanguage] = useState(() => {
+        return localStorage.getItem('selectedLanguage') || 'ENG';
+    });
+
+    useEffect(() => {
+        const langValue = localStorage.getItem('selectedLanguage');
+        if (langValue !== null) {
+            setSelectedLanguage(langValue)
+        }
+    }, []);
+
     return (
         <div className={"container auth_main_section"}>
             {/*LEFT SIDE ============================================================================================*/}
@@ -29,9 +41,9 @@ const Authentication = () => {
                     </div>
 
                     {/*TITLE =========================================================================================*/}
-                    <h2> GoviSewana </h2>
+                    <h2> {commonConfig[selectedLanguage].GOVI_NAME} </h2>
                 </div>
-                <p className={"auth_p_rev"}>Revolutionizing Agriculture</p>
+                <p className={"auth_p_rev"}>{commonConfig[selectedLanguage].REV_AGRI} </p>
                 <div className={"auth_image_section flex_center"}>
                     <img src={authImage} alt={authImage} className={"auth_img"}/>
                 </div>

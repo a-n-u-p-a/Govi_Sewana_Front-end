@@ -10,7 +10,6 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background-color: white;*/
 }
 
 .flex_center {
@@ -38,8 +37,6 @@ h1, h2, h3, h4, h5, h6, p, a, input {
 }
 
 /*COMPONENTS ==========================================================================================================*/
-
-/* -----------------customButton component------------------------------------- */
 .customButton {
     width: 100%;
     height: 100%;
@@ -49,7 +46,6 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     border-radius: 10px;
 }
 
-/* ---------------------customInput component------------------------*/
 .customInput {
     width: 100%;
     height: 100%;
@@ -57,11 +53,11 @@ h1, h2, h3, h4, h5, h6, p, a, input {
 
 .customInputLabel {
     width: 100%;
-    height: auto;
+    height: 34px;
 }
 
 .customInputLabelName {
-    font-size: 16px;
+    font-size: 14px;
 }
 
 .customInputSection {
@@ -78,13 +74,18 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     padding-left: 5px;
 }
 
-
 .customInputIcon {
     color: #aaa;
     margin-left: -20px;
 }
 
-/*------------------otp------------------------------------------ */
+.custom_title_section {
+    width: 80%;
+    height: 7%;
+    color: white;
+    text-align: center;
+}
+
 .customOtpBoxMainSection {
     width: 90%;
     height: 90%;
@@ -94,12 +95,9 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     width: 80%;
     height: 100%;
 }
-/* -------------------otp--------------------------------- */
 
 
-/* -------footer----------------------------------------------------------------------------------------------------------------------- */
-
-
+/*Footer --------------------------------------------------------------------------*/
 .fo_main_section {
     width: 100%;
     height: 100%;
@@ -177,11 +175,11 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     margin: 2%;
     color: white;
 }
-/* -------footer----------------------------------------------------------------------------------------------------------------------- */
+/*Footer --------------------------------------------------------------------------*/
 
-/*----cropYieldPrediction comp --------------------*/
 
-/* yield pred page */
+
+/*Crop --------------------*/
 .crop-container {
     display: flex;
     flex-direction: column;
@@ -192,7 +190,6 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     width: 96%;
     height: auto;
 }
-/* yield pred page */
 
 .crop-form {
     margin-bottom: 20px;
@@ -247,8 +244,7 @@ h1, h2, h3, h4, h5, h6, p, a, input {
 .crop_space {
     width: 1%;
 }
-/*----cropYieldPrediction comp --------------------*/
-
+/*Crop --------------------*/
 
 /*table============================*/
 .table {
@@ -262,7 +258,7 @@ h1, h2, h3, h4, h5, h6, p, a, input {
 }
 
 .table-cell {
-    border: 1px solid #ffffff;
+    border: 1px solid #000;
     padding: 8px;
 }
 
@@ -300,6 +296,46 @@ h1, h2, h3, h4, h5, h6, p, a, input {
 /*table===========================*/
 
 
+
+/*cultivation=========================*/
+.custom_cultivation_main {
+    width: 90%;
+    border-radius: 15px;
+    height: 95%;
+    background-color: white;
+}
+
+.custom_cul_img_section {
+    width: 80%;
+    height: 30%;
+}
+
+.custom_cul_img {
+    height: 90%;
+}
+
+.custom_cul_separator {
+    width: 80%;
+    height: 0.5%;
+    background-color: gray;
+}
+
+.custom_cul_p {
+    text-align: center;
+    font-size: 0.9rem;
+    width: 80%;
+}
+.custom_cul_button_section{
+    width: 80%;
+    height: 20%;
+}
+.custom_cul_button{
+    width: 80%;
+    height: 60%;
+    border-radius: 40px;
+}
+/*cultivation=========================*/
+
 .bgGreen {
     background-color: lightseagreen !important;
 }
@@ -307,3 +343,4 @@ h1, h2, h3, h4, h5, h6, p, a, input {
 .bgBlue {
     background-color: deepskyblue !important;
 }
+

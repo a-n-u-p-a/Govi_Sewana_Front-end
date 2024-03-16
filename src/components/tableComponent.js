@@ -1,6 +1,8 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import {useState} from "react";
+import commonConfig from '../config/commonConfig.json';
 
 const TableComponent = () => {
 
@@ -24,14 +26,25 @@ const TableComponent = () => {
         }
     };
 
+    const [selectedLanguage, setSelectedLanguage] = useState(() => {
+        return localStorage.getItem('selectedLanguage') || 'ENG';
+    });
+
+    useEffect(() => {
+        const langValue = localStorage.getItem('selectedLanguage');
+        if (langValue !== null) {
+            setSelectedLanguage(langValue)
+        }
+    }, []);
+
     return (
         <table className="table">
             <thead className="table-header">
             <tr>
-                <th className="table-cell">Weak No</th>
-                <th className="table-cell">Total Yield of Farmers /mt</th>
-                <th className="table-cell">Total Demand Required/mt</th>
-                <th className="table-cell">In Excess</th>
+                <th className="table-cell">{commonConfig[selectedLanguage].TB_WEEKNO}</th>
+                <th className="table-cell">{commonConfig[selectedLanguage].TB_TOTAL_YIELD}</th>
+                <th className="table-cell">{commonConfig[selectedLanguage].TB_TOTAL_DEMAND}</th>
+                <th className="table-cell">{commonConfig[selectedLanguage].TB_INEXCESS}</th>
             </tr>
             </thead>
             <tbody className="table-body">

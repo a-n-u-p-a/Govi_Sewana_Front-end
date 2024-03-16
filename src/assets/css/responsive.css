@@ -1,9 +1,234 @@
 /*RESPONSIVE =========================================================================================================*/
 @media only screen and (max-width: 1024px) {
     .customInputLabel {
-        height: 30px !important;
+        height: 45% !important;
     }
 }
+
+/*YieldPrediction===================================*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
+
+    .res_yie_h2 {
+        font-size: 1rem;
+    }
+
+    .crop-container {
+        width: 85%;
+        height: 500px;
+        flex-direction: column !important;
+    }
+
+    .crop-form {
+        flex-direction: column !important;
+    }
+
+    .crop-select {
+        width: 200px;
+    }
+
+
+    .crop-input {
+        width: 189px;
+    }
+
+
+    .res_crop_yie {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .crop-result {
+        width: 90%;
+        margin: 10px;
+    }
+
+    .tblHeader {
+        padding: 5px !important;
+        height: 40px !important;
+        width: 100px !important;
+    }
+
+
+    .res_yie_table_container {
+        height: auto;
+    }
+
+    .res_table_div {
+        width: 100%;
+        height: 50%;
+        justify-content: center;
+        align-items: center;
+        display: flex;;
+    }
+
+    .table {
+        font-size: 0.4rem;
+    }
+
+    .res_yie_mid_section {
+        height: 150px !important;
+        flex-direction: column;
+    }
+
+    .yie_yes_no_section {
+        width: 100% !important;
+        height: 30% !important;
+        font-size: 0.7rem;
+    }
+
+    .yie_button_sub1 {
+        width: 25% !important;
+    }
+
+    .yie_crop_section {
+        width: 100% !important;
+        height: 45px !important;
+        margin: 10px;
+    }
+
+    .res_yie_crop_btn {
+        width: 100% !important;
+    }
+
+}
+
+/*YieldPrediction===================================*/
+
+
+
+/*PRICE============================*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
+    .pre_header {
+        font-size: 10px;
+    }
+
+    .pre_tbl_section {
+        height: 70% !important;
+    }
+
+    .res_chart {
+        height: 50% !important;
+    }
+
+}
+
+/*PRICE============================*/
+
+
+/*CULTIVATION====================================*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 400px) {
+    .cul_header_section {
+        font-size: 10px;
+        width: 90% !important;
+    }
+
+    .cul_content_title {
+        font-size: 10px;
+    }
+
+    .cul_content_section {
+        width: 90% !important;
+    }
+
+    .cul_content_card_section {
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+        height: auto !important;
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+
+    .res_cultivation_card_section {
+        margin-top: 650px;
+    }
+
+    .cul_card_section {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .custom_cul_button {
+        height: 80% !important;
+        margin-bottom: 10px !important;
+    }
+
+}
+
+@media only screen and (min-device-width: 401px) and (max-device-width: 500px) {
+    .cul_header_section {
+        font-size: 10px;
+        width: 90% !important;
+    }
+
+    .cul_content_title {
+        font-size: 12px;
+    }
+
+    .cul_content_section {
+        width: 90% !important;
+    }
+
+    .cul_content_card_section {
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+
+    .res_cultivation_card_section {
+        margin-top: 650px;
+    }
+
+    .cul_card_section {
+        width: 300px !important;
+    }
+
+    .custom_cul_button {
+        height: 70% !important;
+        margin-bottom: 10px !important;
+    }
+
+}
+
+@media only screen and (min-device-width: 501px) and (max-device-width: 600px) {
+    .cul_header_section {
+        font-size: 10px;
+        width: 90% !important;
+    }
+
+    .cul_content_title {
+        font-size: 12px;
+    }
+
+    .cul_content_section {
+        width: 90% !important;
+    }
+
+    .cul_content_card_section {
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: auto;
+        width: 100% !important;
+        flex-direction: column !important;
+    }
+
+    .res_cultivation_card_section {
+        margin-top: 650px;
+    }
+
+    .cul_card_section {
+        width: 300px !important;
+    }
+
+    .custom_cul_button {
+        height: 70% !important;
+        margin-bottom: 10px !important;
+    }
+
+}
+
 
 @media only screen and (min-device-width: 601px) and (max-device-width: 768px) {
 
@@ -64,6 +289,7 @@
 
 }
 
+
 @media only screen and (max-width: 600px) {
 
     /*AUTHENTICATION =================================================================================================*/
@@ -112,132 +338,117 @@
     }
 
     /*AUTHENTICATION =================================================================================================*/
-}
-
-
-
-@media only screen and (max-width: 485px) {
-    .auth_side_section {
-        width: 100%;
-    }
-
-    .auth_left_header {
-        margin-top: 30%;
-    }
-
-    .auth_img {
-        height: 45% !important;
-        margin-top: -70%;
-    }
-
-    .auth_icon {
-        height: 70% !important;
-    }
-
-    .auth_left_header h2 {
-        margin-left: 4%;
-        font-size: 1rem;
-    }
-
-    .auth_p_rev {
-        font-size: 0.7rem !important;
-    }
-
-    .sign_main_section h1 {
-        font-size: 1rem;
-    }
-
-    .sign_text_section {
-        height: 13% !important;
-    }
-
-    .customInputLabel {
-        margin-top: 10% !important;
-        height: 30px !important;
-    }
-
-    .signIn_button_section {
-        height: 5% !important;
-        margin-top: 9% !important;
-    }
-
-    .signUp_button_section {
-        height: 5% !important;
-        margin-top: 9% !important;
-    }
-
-    .sign_p {
-        font-size: 0.6rem !important;
-    }
 
 }
 
-@media only screen and (max-width: 390px) {
-    .auth_side_section {
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    .main_form_nav_bar_section {
+        width: 0 !important;
+    }
+
+    .nav_main_section {
+        display: none;
+    }
+
+    .nav_open {
+        display: block;
+    }
+
+    .fo_main_section {
         width: 100%;
-    }
-
-    .auth_left_header {
-        margin-top: 90%;
-    }
-
-    .auth_img {
-        height: 30% !important;
-        margin-top: -150%;
-    }
-
-    .auth_icon {
-        height: 70% !important;
-    }
-
-    .auth_left_header h2 {
-        margin-left: 4%;
-        font-size: 1rem;
-    }
-
-    .auth_p_rev {
-        font-size: 0.6rem !important;
-    }
-
-    .sign_main_section h1 {
-        font-size: 0.8rem;
-    }
-
-    .sign_text_section {
-        height: 12% !important;
-    }
-
-    .customInputLabel {
-        margin-bottom: 5%;
-    }
-
-    .customInputLabelName {
-        font-size: 0.6rem !important;
-    }
-
-    .customInputSection {
-        margin-top: -10%;
-    }
-
-    .customInputField {
+        height: 300px;
         font-size: 0.7rem;
     }
 
-    .signIn_button_section {
-        height: 5% !important;
-        margin-top: 15% !important;
+    .fo_top_section {
+        flex-direction: column;
     }
 
-    .signUp_button_section {
-        height: 5% !important;
-        margin-top: 10% !important;
+    .fo_mid_section {
+        height: 35%;
+        width: 100%;
     }
 
-    .sign_p {
-        font-size: 0.5rem !important;
+    .fo_sub_section1 {
+        width: 20%;
+        margin-left: -7%;
     }
-    /*AUTHENTICATION =================================================================================================*/
+
+    .foLogo {
+        height: 30%;
+        margin-left: 40%;
+    }
+
+    .fo_address {
+        margin-left: 10%;
+    }
+
+    .fo_social_title {
+        margin-left: -20%;
+    }
+
+    .fo_bottom_sub1 {
+        width: 100%;
+        font-size: 0.5rem;
+    }
+
+    .fo_bottom_sub2 {
+        font-size: 0.5rem;
+    }
 }
+
+@media only screen and (min-device-width: 501px) and (max-device-width: 768px) {
+    .foLogo {
+        height: 50%;
+    }
+
+    .fo_main_section {
+        font-size: 0.8rem;
+    }
+
+    .fo_bottom_sub1 {
+        font-size: 0.8rem;
+    }
+
+    .fo_bottom_sub2 {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-device-width: 769px) and (max-device-width: 1200px) {
+
+    .fo_main_section {
+        font-size: 0.7rem !important;
+    }
+
+
+    .fo_mid_section {
+        width: 32%;
+    }
+
+    .fo_sub_section1 {
+        width: 20%;
+    }
+
+    .fo_p {
+        margin-left: 2%;
+        font-size: 0.7rem;
+    }
+
+    .fo_address {
+        margin-left: -5%;
+    }
+
+    .fo_social_section {
+        margin-left: -20%;
+    }
+
+    .fo_bottom_section {
+        height: 30%;
+        font-size: 0.6rem;
+    }
+}
+
 
 
 /*OTP / */
@@ -246,9 +457,11 @@
     .ot_top_section {
         width: 90% !important;
     }
-    .ot_img{
+
+    .ot_img {
         height: 55% !important;
     }
+
     /*OTP ============================================================================================================*/
 
 }
@@ -259,12 +472,12 @@
         flex-direction: column;
     }
 
-    .otp_side_section{
+    .otp_side_section {
         width: 100% !important;
         height: 50% !important;
     }
 
-    .ot_img{
+    .ot_img {
         height: 75% !important;
     }
 
@@ -280,13 +493,16 @@
         height: 15% !important;
     }
 
-    .otp_p2{
+    .otp_p2 {
         font-size: 1rem;
     }
-    .otp_footer_section{
+
+    .otp_footer_section {
         width: 100% !important;
     }
+
     /*OTP ============================================================================================================*/
+
 }
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
@@ -295,12 +511,12 @@
         flex-direction: column;
     }
 
-    .otp_side_section{
+    .otp_side_section {
         width: 100% !important;
         height: 50% !important;
     }
 
-    .ot_img{
+    .ot_img {
         height: 60% !important;
     }
 
@@ -308,15 +524,19 @@
         margin-top: -10%;
     }
 
-    .otp_p2{
+    .otp_p2 {
         font-size: 0.9rem;
     }
-    .otp_footer_section{
+
+    .otp_footer_section {
         width: 100% !important;
     }
+
     /*OTP ============================================================================================================*/
 
 }
+
+
 
 
 /*RESPONSIVE =========================================================================================================*/

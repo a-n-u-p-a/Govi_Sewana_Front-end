@@ -21,5 +21,6 @@
     border: 2px solid white;
     padding-left: 5%;
     overflow-y: auto;
+    border-radius: 15px;
     overflow-x: hidden;
 }

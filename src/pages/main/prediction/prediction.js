@@ -1,5 +1,7 @@
 import React from "react";
-import './pricePrediction.css';
+import './prediction.css';
+// import {useState} from "react";
+import commonConfig from '../../../config/commonConfig.json';
 
 import {
     Chart as ChartJS,
@@ -39,6 +41,7 @@ const options = {
 };
 
 const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+// const labels = {commonConfig.ENG.MONTHS.split(",")}
 
 const data = {
     labels,
@@ -58,14 +61,17 @@ const data = {
     ],
 }
 
-const PricePrediction = () => {
+const Prediction = () => {
 
+    // const [selectedLanguage, setSelectedLanguage] = useState(() => {
+    //     return localStorage.getItem('selectedLanguage') || 'ENG';
+    // });
 
     return (
         <div className={"container pre_main_section flex_col"}>
 
             <div className={"pre_header flex_center"}>
-                <h2> Price Prediction </h2>
+                <h2>{commonConfig.ENG.PRICE_PAGE_TITLE}</h2>
             </div>
 
             <div className={"pre_search_section flex_center"}>
@@ -79,8 +85,7 @@ const PricePrediction = () => {
             </div>
 
             <div className={"pre_tbl_section flex_center"}>
-
-                <Line options={options} data={data} />
+                <Line options={options} data={data} className={"res_chart"} />
 
             </div>
 
@@ -89,4 +94,4 @@ const PricePrediction = () => {
 }
 
 
-export default PricePrediction;
+export default Prediction;
