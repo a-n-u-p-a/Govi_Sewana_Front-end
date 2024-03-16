@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6, p, a, input {
 }
 
 .customInputLabelName {
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .customInputSection {
@@ -388,98 +388,7 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     background-color: rgba(0, 0, 255, 0.3);
     color: #0000ff;
 }
-/*table===========================*/
 
-/*recommended====================================*/
-.custom_rec_card_section {
-    width: 33%;
-    height: 100%;
-}
-
-.custom_rec_card_mini {
-    width: 90%;
-    height: 90%;
-    border: 2px solid #00be4f;
-    border-radius: 20px;
-    background-color: #d4e5c6;
-}
-
-.custom_rec_card_img_section {
-    width: 80%;
-    height: 30%;
-}
-
-.custom_rec_card_img {
-    height: 70%;
-}
-
-.custom_rec_card_separator {
-    width: 80%;
-    height: 1px;
-    background-color: gray;
-}
-
-.custom_card_data {
-    width: 80%;
-    height: 8%;
-    margin-top: 1%;
-}
-
-.custom_rec_card_data_title {
-    width: 81%;
-    height: 100%;
-}
-
-.custom_rec_card_data_set {
-    width: 19%;
-    height: 100%;
-}
-
-.custom_rec_button_section {
-    width: 80%;
-    height: 12%;
-    margin-top: 5%;
-}
-/*recommended====================================*/
-
-/*cultivation=========================*/
-.custom_cultivation_main {
-    width: 90%;
-    border-radius: 15px;
-    height: 95%;
-    background-color: white;
-}
-
-.custom_cul_img_section {
-    width: 80%;
-    height: 30%;
-}
-
-.custom_cul_img {
-    height: 90%;
-}
-
-.custom_cul_separator {
-    width: 80%;
-    height: 0.5%;
-    background-color: gray;
-}
-
-.custom_cul_p {
-    text-align: center;
-    font-size: 0.9rem;
-    width: 80%;
-}
-.custom_cul_button_section{
-    width: 80%;
-    height: 20%;
-}
-.custom_cul_button{
-    width: 80%;
-    height: 60%;
-    border-radius: 40px;
-}
-/*cultivation=========================*/
 
 .bgGreen {
     background-color: lightseagreen !important;

@@ -1,5 +1,14 @@
 {
   "ENG": {
+<<<<<<< HEAD
+    "WELCOME": "Welcome To GoviSewana"
+  },
+  "SIN": {
+    "WELCOME": "ගොවි සෙවණ වෙත සාදරයෙන් පිළිගනිමු"
+  },
+  "TAM": {
+    "WELCOME": "கோவிசெவன வரவேற்கிறோம்"
+=======
     "WELCOME": "Welcome To GoviSewana",
     "SELECT_LAN": "Select Language : ",
     "WELCOME_TITLE": "Step into the Future of Agriculture",
@@ -230,5 +239,6 @@
     "PRICE": "விலை",
     "CULT": "சாகுபடி குறிப்புகள்",
     "LOGOUT": "வெளியேறு"
+>>>>>>> origin/dev
   }
 }
