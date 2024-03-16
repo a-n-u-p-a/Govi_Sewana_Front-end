@@ -1,7 +1,7 @@
 import React from "react";
 import CustomButton from "./customButton";
 
-const CultivationCard = ({SOURCE_IMG, ALT_IMG, TITLE, BTN_READ_MORE}) => {
+const CultivationCard = ({SOURCE_IMG, ALT_IMG, TITLE}) => {
     return (
         <div className={"custom_cultivation_main flex_center flex_col"}>
 
@@ -19,7 +19,7 @@ const CultivationCard = ({SOURCE_IMG, ALT_IMG, TITLE, BTN_READ_MORE}) => {
             </p>
 
             <div className={"custom_cul_button_section flex_center"}>
-                <CustomButton BTN_NAME={"Read more"} CLASS_NAME={"customButton custom_cul_button"} ON_CLICK={BTN_READ_MORE}/>
+                <CustomButton BTN_NAME={"Read more"} CLASS_NAME={"customButton custom_cul_button"}/>
             </div>
 
         </div>
