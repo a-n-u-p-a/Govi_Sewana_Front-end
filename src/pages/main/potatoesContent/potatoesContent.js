@@ -10,6 +10,13 @@ const PotatoesContent = ({onChangePage}) => {
         return localStorage.getItem('selectedLanguage') || 'ENG';
     });
 
+    useEffect(() => {
+        const langValue = localStorage.getItem('selectedLanguage');
+        if (langValue !== null) {
+            setSelectedLanguage(langValue)
+        }
+    }, []);
+
 
     useEffect(() => {
         const cultivationContent = sessionStorage.getItem('cultivationContent')

@@ -82,3 +82,7 @@
     font-size: 1.3rem;
 }
 
+.wel_button:hover{
+    background-color: white;
+}
+
