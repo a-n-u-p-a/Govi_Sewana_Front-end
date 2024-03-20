@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import './welcome.css';
 import wel_Logo from '../../assets/images/logo.png';
 import wel_Name_Logo from '../../assets/images/govisewana.png';
@@ -13,9 +13,6 @@ const Welcome = () => {
 
     const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'ENG');
 
-    const getValues = () => {
-        console.log(selectedLanguage)
-    }
 
     const handleSelectChange = (event) => {
         const newLanguage = event.target.value;

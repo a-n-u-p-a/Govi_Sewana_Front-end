@@ -44,6 +44,13 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     color: white;
     border: none;
     border-radius: 10px;
+    transition: background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.customButton:hover {
+    background-color: #0cb254; /* New color for the hover state */
 }
 
 .customInput {
@@ -324,7 +331,17 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     padding: 10px 10px;
     width: 200px;
     margin-top: 1.5%;
+    transition: 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+}
+
+.crop-button:hover{
+    /* background-color: #0cb254; */
+    background-color: #006400;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
 }
 
 .crop-result {
@@ -353,7 +370,7 @@ h1, h2, h3, h4, h5, h6, p, a, input {
 }
 
 .table-cell {
-    border: 1px solid #000;
+    border: 0.5px solid #5c8b7b;
     padding: 8px;
 }
 
