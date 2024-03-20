@@ -1,7 +1,14 @@
 import React from "react";
 import CustomButton from "./customButton";
+import commonConfig from '../config/commonConfig.json';
+import {useState} from "react";
 
-const CultivationCard = ({SOURCE_IMG, ALT_IMG, TITLE}) => {
+const CultivationCard = ({SOURCE_IMG, ALT_IMG, TITLE, BTN_READ_MORE}) => {
+    
+    const [selectedLanguage, setSelectedLanguage] = useState(() => {
+        return localStorage.getItem('selectedLanguage') || 'ENG';
+       });
+    
     return (
         <div className={"custom_cultivation_main flex_center flex_col"}>
 
@@ -19,7 +26,7 @@ const CultivationCard = ({SOURCE_IMG, ALT_IMG, TITLE}) => {
             </p>
 
             <div className={"custom_cul_button_section flex_center"}>
-                <CustomButton BTN_NAME={"Read more"} CLASS_NAME={"customButton custom_cul_button"}/>
+                <CustomButton BTN_NAME= {commonConfig[selectedLanguage].READ_MORE_BUTTON}  CLASS_NAME={"customButton custom_cul_button"} ON_CLICK={BTN_READ_MORE}/>
             </div>
 
         </div>

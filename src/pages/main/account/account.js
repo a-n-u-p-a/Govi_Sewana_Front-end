@@ -78,7 +78,7 @@ const Account = () => {
             <div className={"acc_line"}/>
             <div className={"acc_side_section flex_center flex_col"}>
 
-                <h2> ACCOUNT </h2>
+                <h2> {commonConfig[selectedLanguage].ACCOUNT} </h2>
 
                 <div className={"acc_view_section flex_col flex_center"}>
                     <div className={"acc_top_section flex_center flex_row"}>

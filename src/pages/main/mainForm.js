@@ -1,14 +1,13 @@
 import React, {useState} from "react";
 import './mainForm.css';
 import NavBar from "../../components/navBar";
-import YieldPrediction from "./yieldPrediction/YieldPrediction";
+
 import RecommendedCrops from "./recommend/recommendedCrops";
 import Footer from "../../components/footer";
-import Prediction from "./prediction/prediction";
+
 import CultivationTips from "./cultivationTips/cultivationTips";
 import Account from "./account/account";
 import PotatoesContent from "./potatoesContent/potatoesContent";
-import PotatoesDetail from "./potatoesDetail/potatoesDetail";
 
 const MainForm = () => {
 
@@ -39,17 +38,13 @@ const MainForm = () => {
             case 'Profile':
                 return <Account/>;
 
-            case 'YieldPrediction':
-                return <YieldPrediction/>;
-
-            case 'Prediction':
-                return <Prediction/>;
+           
+            
 
             case 'RecommendedCrops':
                 return <RecommendedCrops/>;
 
-            case 'PotatoesDetail':
-                return <PotatoesDetail/>;
+            
 
             case 'PotatoesContent':
                 return <PotatoesContent onChangePage={handleButtonClick}/>;
@@ -80,6 +75,9 @@ const MainForm = () => {
             <div className={"main_form_content_section"}>
                 {renderPage()}
 
+                <div className={"main_form_footer"}>
+                    <Footer/>
+                </div>
 
             </div>
         </div>

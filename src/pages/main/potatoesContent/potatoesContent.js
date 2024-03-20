@@ -16,6 +16,14 @@ const PotatoesContent = ({onChangePage}) => {
         setPageTitle(cultivationContent)
     }, []);
 
+    useEffect(() => {
+        const langValue = localStorage.getItem('selectedLanguage');
+        if (langValue !== null) {
+            setSelectedLanguage(langValue)
+        }
+    }, []);
+
+
     const selectSoil = () => {
         onChangePage('PotatoesDetail');
         sessionStorage.setItem('selectTips', 'SOIL');
