@@ -29,9 +29,16 @@ const PotatoesDetail = () => {
 
     const getCultivationTipsConfigText = (title, language, subTitle) => {
         if (cultivationTipsConfig[title] && cultivationTipsConfig[title][language] && cultivationTipsConfig[title][language][subTitle]) {
-            return cultivationTipsConfig[title][language][subTitle];
-        }
+            const content =cultivationTipsConfig[title][language][subTitle];
 
+            // Split the content by newline character to get each point separately
+            const points = content.split('\n');
+            // Map through each point and wrap it with <p> tags
+            const formattedContent = points.map((point, index) => (
+                <p key={index}>{point}</p>
+            ));
+            return formattedContent;
+        }
         return "Text not available";
     };
 

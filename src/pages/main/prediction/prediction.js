@@ -1,6 +1,6 @@
 import React from "react";
 import './prediction.css';
-// import {useState} from "react";
+import {useState,useEffect} from "react";
 import commonConfig from '../../../config/commonConfig.json';
 
 import {
@@ -63,9 +63,16 @@ const data = {
 
 const Prediction = () => {
 
-    // const [selectedLanguage, setSelectedLanguage] = useState(() => {
-    //     return localStorage.getItem('selectedLanguage') || 'ENG';
-    // });
+    const [selectedLanguage, setSelectedLanguage] = useState(() => {
+        return localStorage.getItem('selectedLanguage') || 'ENG';
+    });
+
+    useEffect(() => {
+        const langValue = localStorage.getItem('selectedLanguage');
+        if (langValue !== null) {
+            setSelectedLanguage(langValue)
+        }
+    }, []);
 
     return (
         <div className={"container pre_main_section flex_col"}>
@@ -75,13 +82,36 @@ const Prediction = () => {
             </div>
 
             <div className={"pre_search_section flex_center"}>
+
+                {/* drop down and submit button */}
+                <div className="crop-form flex_align flex_row">
+
+                    <div className="crop-input-group flex_col flex_justify">
+                        <label className="crop-label">{commonConfig[selectedLanguage].CROP_NAME}</label>
+                        <select className="crop-select crop_select_custom">
+                            <option value="crop2">{commonConfig[selectedLanguage].DROPDOWN_CAR}</option>
+                            <option value="crop3">{commonConfig[selectedLanguage].DROPDOWN_POTA}</option>
+                        </select>
+                    </div>
+
+
+                    <div className="crop-input-group crop_space1 flex_col flex_justify">
+                        <label className="crop-label">{commonConfig[selectedLanguage].ACRE_SELEC}</label>
+                        <input type="month" className="crop-input"/>
+                    </div>
+
+                    <button className="crop-button crop_space1">{commonConfig[selectedLanguage].BTN_SUBMIT}</button>
+
+                </div>
+                {/* end drop down and submit button */}
+{/* 
                 <form className="search-form">
                     <input
                         type="text"
                         placeholder="Search..."
                         className="search-input"
                     />
-                </form>
+                </form> */}
             </div>
 
             <div className={"pre_tbl_section flex_center"}>
