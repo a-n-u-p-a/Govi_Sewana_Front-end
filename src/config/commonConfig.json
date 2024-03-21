@@ -38,7 +38,7 @@
     "BTN_SUBMIT": "Submit",
     "PRED_YIELD": "Predicted Yield : ",
     "CROP_HARV": "Crop Harvested at :",
-    "WEEK_NO": "Week No :",
+    "WEEK_NO": "Week Number",
     "EXCESS_TB_TITLE": "Crop excess check table",
     "TB_WEEKNO": "Week No",
     "TB_TOTAL_YIELD": "Total Yield of farmers/mt",
@@ -88,7 +88,18 @@
     "POTATO":"Potato",
     "CARROT":"Carrot",
     "BEETROOT":"Beet Root",
-    "READ_MORE_BUTTON":"Read more"
+    "READ_MORE_BUTTON":"Read more",
+    "EXPLORE_DESCRIPTION":"Explore tips, disease management, harvesting times and more",
+    "ENGLISH":"English",
+    "SINHALA":"Sinhala",
+    "TAMIL":"Tamil",
+    "RECOMMENDED":"Recommended",
+    "CROP_DES":"Crops For Your Cultivation",
+    "MARKET_DEMAND":"Market Demand",
+    "CURRENT_YIELD":"Current crop yield",
+    "REQUIRED_YIELD":"Required crop yield",
+    "SELECT_BTN":"Select the crop"
+
 
     
 
@@ -99,6 +110,7 @@
 
 
   },
+
   "SIN": {
     "WELCOME": "ගොවි සෙවණ වෙත සාදරයෙන් පිළිගනිමු",
     "SELECT_LAN": "භාෂාව තෝරන්න : ",
@@ -188,7 +200,23 @@
     "POTATO":"අර්තාපල්",
     "CARROT":"කැරට්",
     "BEETROOT":"බීට්රූට්",
-    "READ_MORE_BUTTON":"තවත් කියවන්න"
+    "READ_MORE_BUTTON":"තවත් කියවන්න",
+    "EXPLORE_DESCRIPTION":"ඉඟි, රෝග කළමනාකරණය, අස්වැන්න නෙළන කාලය සහ තවත් දේ ගවේෂණය කරන්න",
+    "ENGLISH":"ඉංග්‍රීසි",
+    "SINHALA":"සිංහල",
+    "TAMIL":"දෙමළ",
+    "RECOMMENDED":"නිර්දේශ කර ඇති",
+    "CROP_DES":"බෝග ඔබේ වගාව සඳහා",
+    "MARKET_DEMAND":"වෙළෙඳපොළ ඉල්ලුම",
+    "CURRENT_YIELD":"වත්මන් බෝග අස්වැන්න",
+    "REQUIRED_YIELD":"අවශ්‍ය බෝග අස්වැන්න",
+    "SELECT_BTN":"බෝගය තෝරන්න"
+
+
+
+
+
+
 
 
 
@@ -260,7 +288,7 @@
     "MONTHS": "ஜனவரி, பிப்ரவரி, மார்ச், ஏப்ரல், மே, ஜூன், ஜூலை, ஆகஸ்ட், செப்டம்பர், அக்டோபர், நவம்பர், டிசம்பர்",
     "BELOW_FORECASTED_NAME": "முன்கணிக்கப்பட்ட விலை",
     "BELOW_HISTORICAL_NAME": "வரலாற்று விலை",
-    "SAVE_CHANGES ": "மாற்றங்களை சேமியுங்கள் ",
+    "SAVE_CHANGES": "மாற்றங்களை சேமியுங்கள்",
     "TERMS_CONDITIONS": "விதிமுறைகளும் நிபந்தனைகளும்",
     "SETTINGS": "அமைப்புகள்",
     "PROFILE": "சுயவிவரம்",
@@ -281,7 +309,21 @@
     "POTATO":"உருளைக்கிழங்கு",
     "CARROT":"கேரட்",
     "BEETROOT":"பீட்ரூட்",
-    "READ_MORE_BUTTON":"மேலும் படிக்கவும்"          
+    "READ_MORE_BUTTON":"மேலும் படிக்கவும்",
+    "EXPLORE_DESCRIPTION":"குறிப்புகள், நோய் மேலாண்மை, அறுவடை நேரம் மற்றும் பலவற்றை ஆராயுங்கள்",
+    "ENGLISH":"ஆங்கிலம்",
+    "SINHALA":"சிங்களம்",
+    "TAMIL":"தமிழ்",
+    "RECOMMENDED":"பரிந்துரைக்கப்பட்டது",
+    "CROP_DES":"பயிர்கள் உங்கள் சாகுபடிக்கான",
+    "MARKET_DEMAND":"சந்தை தேவை",
+    "CURRENT_YIELD":"சந்தை தேவை",
+    "REQUIRED_YIELD":"தேவையான பயிர் மகசூல்",
+    "SELECT_BTN":"பயிர் தேர்ந்தெடுக்கவும்"
+
+
+
+         
 
   }
 }

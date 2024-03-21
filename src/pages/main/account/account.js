@@ -63,9 +63,9 @@ const Account = () => {
                     </div>
                     <div className={"acc_select_lang flex_center"}>
                         <select className={"acc_combo_box"}>
-                            <option value="english">English</option>
-                            <option value="sinhala">Sinhala</option>
-                            <option value="tamil">Tamil</option>
+                            <option value="english">{commonConfig[selectedLanguage].ENGLISH}</option>
+                            <option value="sinhala">{commonConfig[selectedLanguage].SINHALA}</option>
+                            <option value="tamil">{commonConfig[selectedLanguage].TAMIL}</option>
                         </select>
                     </div>
                     <div className={"acc_space"}/>

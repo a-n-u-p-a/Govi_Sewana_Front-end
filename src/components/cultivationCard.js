@@ -1,7 +1,8 @@
-import React from "react";
+//import React from "react";
 import CustomButton from "./customButton";
 import commonConfig from '../config/commonConfig.json';
-import {useState} from "react";
+//import {useState} from "react";
+import React, {useEffect, useState} from "react";
 
 const CultivationCard = ({SOURCE_IMG, ALT_IMG, TITLE, BTN_READ_MORE}) => {
     
@@ -21,8 +22,7 @@ const CultivationCard = ({SOURCE_IMG, ALT_IMG, TITLE, BTN_READ_MORE}) => {
             <div className={"custom_cul_separator"}/>
 
             <p className={"custom_cul_p"}>
-                Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit elit.
+            {commonConfig[selectedLanguage].EXPLORE_DESCRIPTION}
             </p>
 
             <div className={"custom_cul_button_section flex_center"}>
