@@ -61,3 +61,8 @@
     color: #009658;
     font-weight: bold;
 }
+
+.otp_span:hover {
+    text-decoration: underline;
+    color: #ffffff ;
+}

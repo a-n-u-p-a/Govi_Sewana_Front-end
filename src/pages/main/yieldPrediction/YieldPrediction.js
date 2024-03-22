@@ -1,7 +1,8 @@
 import React, {useEffect, useState} from "react";
 import './yieldPrediction.css';
 import CropYieldPrediction from "../../../components/cropYieldPrediction";
-import TableComponent from "../../../components/tableComponent";
+import TableComponentCarrot from "../../../components/tableComponentCarrot";
+import TableComponentPotato from "../../../components/tableComponentPotato";
 import carrotImage from '../../../assets/images/carrot.png';
 import potatoImage from '../../../assets/images/potato.png';
 import CustomButton from "../../../components/customButton";
@@ -43,7 +44,7 @@ const YieldPrediction = () => {
                             </div>
                             <div className={"yie_table_space"}/>
                             <div className={"res_table_div"}>
-                                <TableComponent/>
+                                <TableComponentCarrot/>
                             </div>
 
                         </div>
@@ -89,7 +90,7 @@ const YieldPrediction = () => {
                             </div>
                             <div className={"yie_table_space"}/>
                             <div className={"res_table_div"}>
-                                <TableComponent/>
+                                <TableComponentPotato/>
                             </div>
                         </div>
                     </div>
