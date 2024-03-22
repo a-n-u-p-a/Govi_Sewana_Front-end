@@ -44,6 +44,7 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     color: white;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .customInput {
@@ -272,7 +273,20 @@ h1, h2, h3, h4, h5, h6, p, a, input {
     margin-left: 2%;
 }
 
-/*Custom Icon Button --------------------------------------------------------------*/
+
+.customIconButtonSection:hover
+.customIconButtonRight:hover
+{
+
+    outline: 1px #12B76A solid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #073D26 ;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.5s all 0.5s ease-in;
+    width:70%;
+}
+/*Custom Icon Button --------------------------------------------------------------*/  
 
 /*Crop --------------------*/
 .crop-container {

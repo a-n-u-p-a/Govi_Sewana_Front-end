@@ -2,6 +2,8 @@ import React, {useEffect, useState} from "react";
 import './potatoesContent.css';
 import commonConfig from '../../../config/commonConfig.json';
 
+import 'remixicon/fonts/remixicon.css';
+
 const PotatoesContent = ({onChangePage}) => {
 
     const [pageTitle, setPageTitle] = useState('');
@@ -64,12 +66,12 @@ const PotatoesContent = ({onChangePage}) => {
 
             <div className={"pot_content_section"}>
 
-                <h2 className={"pot_content_txt"} style={{marginTop: "3%"}} onClick={selectSoil}> - {commonConfig[selectedLanguage].SOIL} </h2>
-                <h2 className={"pot_content_txt"} onClick={selectPlanting}> - {commonConfig[selectedLanguage].DISTANCE_PLANTS_AND_PLANTING_SEEDS } </h2>
-                <h2 className={"pot_content_txt"} onClick={selectFer}> - {commonConfig[selectedLanguage].FERTILIZING}</h2>
-                <h2 className={"pot_content_txt"} onClick={selectRECOMMEND}> -{commonConfig[selectedLanguage].RECOMMENDED_SPECIES}  </h2>
-                <h2 className={"pot_content_txt"} onClick={selectDISEASES}> -{commonConfig[selectedLanguage].DISEASES_AND_PESTICIDES}   </h2>
-                <h2 className={"pot_content_txt"} onClick={selectHARVESTING}> - {commonConfig[selectedLanguage].HARVESTING} </h2>
+                <h2 className={"pot_content_txt"} style={{marginTop: "2%"}} onClick={selectSoil}> <i class="ri-plant-line"></i> &nbsp; {commonConfig[selectedLanguage].SOIL} </h2> <br></br>
+                <h2 className={"pot_content_txt"} onClick={selectPlanting}> <i class="ri-plant-line"></i> &nbsp; {commonConfig[selectedLanguage].DISTANCE_PLANTS_AND_PLANTING_SEEDS } </h2><br></br>
+                <h2 className={"pot_content_txt"} onClick={selectFer}> <i class="ri-plant-line"></i> &nbsp; {commonConfig[selectedLanguage].FERTILIZING}</h2><br></br>
+                <h2 className={"pot_content_txt"} onClick={selectRECOMMEND}> <i class="ri-plant-line"></i> &nbsp; {commonConfig[selectedLanguage].RECOMMENDED_SPECIES}  </h2><br></br>
+                <h2 className={"pot_content_txt"} onClick={selectDISEASES}> <i class="ri-plant-line"></i> &nbsp; {commonConfig[selectedLanguage].DISEASES_AND_PESTICIDES}   </h2><br></br>
+                <h2 className={"pot_content_txt"} onClick={selectHARVESTING}> <i class="ri-plant-line"></i> &nbsp; {commonConfig[selectedLanguage].HARVESTING} </h2>
 
             </div>
 

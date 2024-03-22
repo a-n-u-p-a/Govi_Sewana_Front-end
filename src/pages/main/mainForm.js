@@ -9,6 +9,8 @@ import CultivationTips from "./cultivationTips/cultivationTips";
 import Account from "./account/account";
 import PotatoesContent from "./potatoesContent/potatoesContent";
 
+import Welcome from "../welcome/welcome"; // methana
+
 const MainForm = () => {
 
     const [currentPage, setCurrentPage] = useState(null);
@@ -35,16 +37,14 @@ const MainForm = () => {
 
     const renderPage = () => {
         switch (currentPage) {
+           
             case 'Profile':
                 return <Account/>;
 
-           
-            
 
             case 'RecommendedCrops':
                 return <RecommendedCrops/>;
 
-            
 
             case 'PotatoesContent':
                 return <PotatoesContent onChangePage={handleButtonClick}/>;
@@ -55,6 +55,10 @@ const MainForm = () => {
                     BTN_CARROT={clickCultivationTipsCar}
                     BTN_BEET={clickCultivationTipsBeet}
                 />;
+
+
+            case 'LogOut':          //methana
+                 return <Welcome/>;
 
             default:
                 return <Account/>;

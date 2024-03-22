@@ -24,4 +24,24 @@
     font-size: 19px;
     cursor: pointer!important;
     margin-left: 10%;
+    border: 1px solid rgb(45, 81, 34);
+    border-radius: 5px;
+    width:50%;
+    
 }
+
+.pot_content_txt:hover
+{
+      outline: 1px #12B76A solid;
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background-color: #1a6343 ;
+      cursor: pointer;
+      border-radius: 10px;
+      transition: 0.5s all 0.5s ease-in;
+      width:50%;
+      transform: scale(1.15);
+      color:azure;
+      
+}
+
+ 

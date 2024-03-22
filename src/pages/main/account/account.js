@@ -93,9 +93,9 @@ const Account = () => {
                     </div>
                     <div className={"acc_bottom_section flex_center"}>
                         <div className={"acc_bottom_side"}/>
-                        <div className={"acc_bottom_side1 flex_center"}>
+                        {/* <div className={"acc_bottom_side1 flex_center"}>
                             <CustomButton BTN_NAME={commonConfig[selectedLanguage].SAVE_CHANGES} CLASS_NAME={"customButton"} STYLE={{marginTop: '5%'}}/>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
 
@@ -109,9 +109,9 @@ const Account = () => {
 
                     <div className={"acc_space2"}/>
 
-                    <div className={"acc_bottom_button flex_row flex_center"}>
+                    {/* <div className={"acc_bottom_button flex_row flex_center"}>
                         <CustomButton BTN_NAME={commonConfig[selectedLanguage].SETTINGS} CLASS_NAME={"customButton"}/>
-                    </div>
+                    </div> */}
 
                 </div>
             </div>

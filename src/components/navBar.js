@@ -72,14 +72,17 @@ const NavBar = ({PROFILE_ON_CLICK, PRE_ON_CLICK, REC_ON_CLICK, PRI_ON_CLICK, CUL
             </div>
             <div className={"nav_separator"}/>
             <div className={"nav_bottom_section"}>
-
+                
+                <br></br>
+                <br></br>
                 <div className={"nav_account_bottom_button"}>
                     <CustomIconButton ICON={faRightFromBracket} TITLE={commonConfig[selectedLanguage].LOGOUT}/>
                 </div>
 
-                <div className={"nav_account_bottom_button"}>
+                {/* <div className={"nav_account_bottom_button"}>
                     <CustomIconButton ICON={faGear} TITLE={commonConfig[selectedLanguage].SETTINGS}/>
-                </div>
+                </div> */}
+            
             </div>
         </div>
     )
