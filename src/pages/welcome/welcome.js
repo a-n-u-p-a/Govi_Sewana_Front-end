@@ -17,6 +17,8 @@ const Welcome = () => {
         getValues();
     }, []);
 
+    
+
     const getValues = () => {
         console.log(selectedLanguage)
     }
