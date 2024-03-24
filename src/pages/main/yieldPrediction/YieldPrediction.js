@@ -21,6 +21,60 @@ const YieldPrediction = () => {
         }
     }, []);
 
+    // const [userTel, setUserTel] = useState("");
+    // const [cropType, setCropType] = useState("");
+    // const [plantingDate, setPlantingDate] = useState("");
+    // const [cropExtent, setCropExtent] = useState("");
+    // const [displayStatus, setDisplayStatus] = useState("");
+
+    // setUserTel("0719882805");
+    // setCropType("Carrot");
+    // setPlantingDate("2024-03-21");
+    // setCropExtent(18);
+
+    function handleButtonClick_Yes() {
+        alert("You can grow the selected crop type and extent !");
+    }
+
+    let inputData = {
+        "Username": "@user0717773481",
+        "Crop_Type": "Potato",
+        "Date_of_Planting": "2024-03-21",
+        "crop_Extent(Acres)": 18
+    } 
+
+    
+
+    function handleButtonClick_No() {
+    
+        deleteData();
+        async function deleteData() {
+            try {
+                let url = 'https://govi-sewana-back-end-final-3yc5uvvuza-uc.a.run.app/yieldPrediction/delete/';
+                let response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(inputData)
+                });
+
+                // 'GET' response from Back-end 
+                if (response.ok) {
+                    let result = await response.json();
+                    alert(result.message);
+                    // setDisplayStatus(result.displayStatus);
+                    console.log(result);
+                } else {
+                    console.error('Error sending data:',response.status);
+                }
+            } catch (err) {
+                console.error('Network error:',err);
+            }
+        }
+    }
+
+
     return (
         <div className={"container flex_col yie_main_section"}>
             <div className={"yie_sub_main flex_center flex_col"}>
@@ -60,12 +114,16 @@ const YieldPrediction = () => {
                             <div className={"yie_button_sub1 flex_center"}>
                                 <CustomButton BTN_NAME={commonConfig[selectedLanguage].BTN_YES}
                                               CLASS_NAME={"customButton"}
-                                              STYLE={{height: '75%', width: '70%', border: '1px solid white'}}/>
+                                              STYLE={{height: '75%', width: '70%', border: '1px solid white'}}
+                                              ON_CLICK={handleButtonClick_Yes}
+                                              />
                             </div>
                             <div className={"yie_button_sub1 flex_center"}>
                                 <CustomButton BTN_NAME={commonConfig[selectedLanguage].BTN_NO}
                                               CLASS_NAME={"customButton"}
-                                              STYLE={{height: '75%', width: '70%', border: '1px solid white'}}/>
+                                              STYLE={{height: '75%', width: '70%', border: '1px solid white'}}
+                                              ON_CLICK={handleButtonClick_No}
+                                              />
                             </div>
                         </div>
                         <div className={"yie_crop_section flex_center"}>

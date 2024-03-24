@@ -121,3 +121,4 @@ const SignUp = ({goToSignIn}) => {
 }
 
 export default SignUp;
+
