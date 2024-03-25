@@ -3,7 +3,7 @@
     "WELCOME": "Welcome To GoviSewana",
     "SELECT_LAN": "Select Language : ",
     "WELCOME_TITLE": "Step into the Future of Agriculture",
-    "WELCOME_P": "Explore Your Crop Yield Forecast Technologies Lorem Ipsum is simply dummy text of the printing and typesetting industry lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.",
+    "WELCOME_P": "Embrace the revolution in agricultural planning and strategy with our state-of-the-art crop yield forecast technologies. Gone are the days of uncertainty and guesswork in farming. Our advanced solutions offer precise, data-driven predictions to help you maximize efficiency, optimize resources, and significantly improve your harvest outcomes.",
     "BTN_EXP": "Explore!!",
     "REV": "Revolutionizing Agriculture",
     "TITLE": "GoviSewana",
@@ -34,11 +34,13 @@
     "DROPDOWN_POTA": "Potato",
     "DROPDOWN_CAR": "Carrot",
     "DATE_SELECT": "Planting date",
+    "DATE_SELEC": "Planting date",
     "ACRE_SELECT": "No of acres",
+    "ACRE_SELEC": "No of acres",
     "BTN_SUBMIT": "Submit",
-    "PRED_YIELD": "Predicted Yield : ",
+    "PRED_YIELD": "Predicted Yield [T]: ",
     "CROP_HARV": "Crop Harvested at :",
-    "WEEK_NO": "Week Number",
+    "WEEK_NO": "Week No :",
     "EXCESS_TB_TITLE": "Crop excess check table",
     "TB_WEEKNO": "Week No",
     "TB_TOTAL_YIELD": "Total Yield of farmers/mt",
@@ -64,9 +66,11 @@
     "GRAPH_TITLE": "Potato Prices (Historical + Forecasted)",
     "WEEKLY_TITLE": "Weekly",
     "MONTHLY_TITLE": "Monthly",
-    "MONTHS": "January,Febrary,March,April,May,June,July,August,September,October,November, December",
+    "WEEK":  ["Week 1", "Week 2", "Week 3", "Week 4"],
+    "HISTORIC_FORECAST": "{cropType} Prices (Historical + Forecasted)",
     "BELOW_FORECASTED_NAME": "Forecasted Price",
     "BELOW_HISTORICAL_NAME": "Historical  Price",
+    "YEAR_MONTH":"Year & Month",
     "SAVE_CHANGES": "Save Changes",
     "TERMS_CONDITIONS": "Terms & Conditions",
     "SETTINGS": "Settings",
@@ -80,7 +84,7 @@
     "DISTANCE_PLANTS_AND_PLANTING_SEEDS": "DISTANCE BETWEEN PLANTS AND PLANTING SEEDS",
     "FERTILIZING":"FERTILIZING",
     "RECOMMENDED_SPECIES":"RECOMMENDED SPECIES",
-    "DISEASES_AND_PESTICIDES":"DISEASES AND PESTICIDES",
+    "DISEASES_AND_PESTICIDES":"DISEASES_AND_PESTICIDES",
     "HARVESTING":"HARVESTING",
     "ACCOUNT":"ACCOUNT",
     "CULTIVATION_TIPS":"Cultivation Tips",
@@ -100,22 +104,12 @@
     "REQUIRED_YIELD":"Required crop yield",
     "SELECT_BTN":"Select the crop"
 
-
-    
-
-
-
-
-    
-
-
   },
-
   "SIN": {
     "WELCOME": "ගොවි සෙවණ වෙත සාදරයෙන් පිළිගනිමු",
     "SELECT_LAN": "භාෂාව තෝරන්න : ",
     "WELCOME_TITLE": "කෘෂිකර්මාන්තයේ අනාගතයට පියවර තබන්න",
-    "WELCOME_P": "ඔබේ බෝග අස්වැන්න පුරෝකථනය තාක්ෂණයන් ගවේෂණය කරන්න Lorem Ipsum යනු මුද්රණ සහ අකුරු සැකසුම් කර්මාන්තයේ ව්යාජ පෙළකි lorem Ipsum යනු 1500 ගණන්වල සිට, නොදන්නා මුද්රණ යන්ත්රයක් ගැලී ගිය දා සිට කර්මාන්තයේ සම්මත ව්යාජ පෙළයි.",
+    "WELCOME_P": "අපගේ අති නවීන බෝග අස්වැන්න පුරෝකථනය කිරීමේ තාක්ෂණයන් සමඟ කෘෂිකාර්මික සැලසුම් සහ උපාය මාර්ගවල විප්ලවය වැලඳ ගන්න. ගොවිතැනේ අවිනිශ්චිතභාවයේ සහ අනුමාන කිරීමේ කාලය ගෙවී ගොස් ඇත. අපගේ උසස් විසඳුම් මඟින් ඔබට කාර්යක්ෂමතාව උපරිම කිරීමට, සම්පත් ප්‍රශස්ත කිරීමට සහ ඔබේ අස්වැන්න ප්‍රතිඵල සැලකිය යුතු ලෙස වැඩිදියුණු කිරීමට උපකාර කිරීමට නිරවද්‍ය, දත්ත පදනම් වූ අනාවැකි පිරිනමයි.",
     "BTN_EXP": "ගවේෂණය කරන්න!!",
     "REV": "කෘෂිකර්මාන්තයේ විප්ලවයක් ඇති කිරීම",
     "TITLE": "ගොවිසෙවණ",
@@ -148,7 +142,7 @@
     "DATE_SELEC": "වගා කරනලද දිනය ",
     "ACRE_SELEC": "අක්කර ගණන",
     "BTN_SUBMIT": "ඉදිරිපත් කරන්න",
-    "PRED_YIELD": "පුරෝකථනය කළ අස්වැන්න : ",
+    "PRED_YIELD": "පුරෝකථනය කළ අස්වැන්න [T]: ",
     "CROP_HARV": "අස්වැන්න ලැබෙන දිනය :  ",
     "WEEK_NO": "සති අංකය : ",
     "EXCESS_TB_TITLE": "අතිරික්ත බෝග අස්වැන්න ගණනය",
@@ -176,9 +170,11 @@
     "GRAPH_TITLE": " මිල ගණන් (ඓතිහාසික + පුරෝකථනය කළ)",
     "WEEKLY_TITLE": "සතිපතා",
     "MONTHLY_TITLE": "මාසික",
-    "මාස": "ජනවාරි, පෙබරවාරි, මාර්තු, අප්‍රේල්, මැයි, ජූනි, ජූලි, අගෝස්තු, සැප්තැම්බර්, ඔක්තෝබර්, නොවැම්බර්, දෙසැම්බර්",
+    "WEEK":  ["සතිය 1", "සතිය 2", "සතිය 3", "සතිය 4"],
+    "HISTORIC_FORECAST": "{cropType} මිල (ඉතිහාසික + අනාවැකි)",
     "BELOW_FORECASTED_NAME": "ඓතිහාසික මිල",
     "BELOW_HISTORICAL_NAME": "පුරෝකථනය කළ මිල",
+    "YEAR_MONTH":"වසර සහ මාසය",
     "SAVE_CHANGES": "වෙනස්කම් සුරකින්න",
     "TERMS_CONDITIONS": "නියම සහ කොන්දේසි",
     "SETTINGS": "සැකසුම්",
@@ -212,21 +208,12 @@
     "REQUIRED_YIELD":"අවශ්‍ය බෝග අස්වැන්න",
     "SELECT_BTN":"බෝගය තෝරන්න"
 
-
-
-
-
-
-
-
-
-
   },
   "TAM": {
     "WELCOME": "கோவிசெவன வரவேற்கிறோம்",
     "SELECT_LAN": "மொழியை தேர்ந்தெடுங்கள் : ",
     "WELCOME_TITLE": "விவசாயத்தின் எதிர்காலத்தில் அடியெடுத்து வைக்கவும்",
-    "WELCOME_P": "உங்கள் பயிர் விளைச்சல் முன்னறிவிப்பு தொழில்நுட்பங்களை ஆராயுங்கள் லோரெம் இப்சம் என்பது அச்சிடும் மற்றும் தட்டச்சு அமைப்புத் தொழிலின் போலி உரையாகும், லோரெம் இப்சம் என்பது 1500களில் இருந்து, அறியப்படாத அச்சுப்பொறி ஒரு கேலியை எடுத்தது முதல் தொழில்துறையின் நிலையான போலி உரையாக இருந்து வருகிறது.",
+    "WELCOME_P": "எங்களின் அதிநவீன பயிர் விளைச்சல் முன்னறிவிப்பு தொழில்நுட்பங்களுடன் விவசாய திட்டமிடல் மற்றும் உத்தியில் புரட்சியை தழுவுங்கள். விவசாயத்தில் நிச்சயமற்ற மற்றும் யூகத்தின் நாட்கள் போய்விட்டன. எங்களின் மேம்பட்ட தீர்வுகள், செயல்திறனை அதிகரிக்கவும், வளங்களை மேம்படுத்தவும், உங்கள் அறுவடை விளைவுகளை கணிசமாக மேம்படுத்தவும் உதவும் துல்லியமான, தரவு சார்ந்த கணிப்புகளை வழங்குகின்றன.",
     "BTN_EXP": "ஆராயுங்கள்!!",
     "REV": "விவசாயத்தில் புரட்சியை ஏற்படுத்துகிறது",
     "TITLE": "கோவிசெவனா",
@@ -257,7 +244,7 @@
     "DATE_SELEC": "நடவு தேதி ",
     "ACRE_SELEC": "ஏக்கர் எண்ணிக்கை",
     "BTN_SUBMIT": "சமர்ப்பி",
-    "PRED_YIELD": "கணிக்கப்பட்ட மகசூல்",
+    "PRED_YIELD": "கணிக்கப்பட்ட மகசூல் [T]",
     "CROP_HARV": "பயிர் அறுவடை செய்யப்பட்டது",
     "WEEK_NO": "வார எண்",
     "EXCESS_TB_TITLE": "பயிர் அதிகப்படியான விளைச்சலைக் கணக்கிடுதல்",
@@ -285,10 +272,12 @@
     "GRAPH_TITLE": " விலைகள் (வரலாறு + முன்னறிவிப்பு)",
     "WEEKLY_TITLE": "வாரந்தோறும்",
     "MONTHLY_TITLE": "மாதாந்திரம்",
-    "MONTHS": "ஜனவரி, பிப்ரவரி, மார்ச், ஏப்ரல், மே, ஜூன், ஜூலை, ஆகஸ்ட், செப்டம்பர், அக்டோபர், நவம்பர், டிசம்பர்",
+    "WEEK":  ["வாரம் 1", "வாரம் 2", "வாரம் 3", "வாரம் 4"],
+    "HISTORIC_FORECAST": "{cropType} விலைகள் (வரலாற்று + கணிப்பு)",
     "BELOW_FORECASTED_NAME": "முன்கணிக்கப்பட்ட விலை",
     "BELOW_HISTORICAL_NAME": "வரலாற்று விலை",
-    "SAVE_CHANGES": "மாற்றங்களை சேமியுங்கள்",
+    "YEAR_MONTH":"ஆண்டு & மாதம்",
+    "SAVE_CHANGES ": "மாற்றங்களை சேமியுங்கள் ",
     "TERMS_CONDITIONS": "விதிமுறைகளும் நிபந்தனைகளும்",
     "SETTINGS": "அமைப்புகள்",
     "PROFILE": "சுயவிவரம்",
@@ -320,10 +309,6 @@
     "CURRENT_YIELD":"சந்தை தேவை",
     "REQUIRED_YIELD":"தேவையான பயிர் மகசூல்",
     "SELECT_BTN":"பயிர் தேர்ந்தெடுக்கவும்"
-
-
-
-         
 
   }
 }

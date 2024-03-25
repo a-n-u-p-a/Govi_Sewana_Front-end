@@ -1,19 +1,18 @@
 import React, {useState} from "react";
 import './mainForm.css';
 import NavBar from "../../components/navBar";
-
+import YieldPrediction from "./yieldPrediction/YieldPrediction";
 import RecommendedCrops from "./recommend/recommendedCrops";
 import Footer from "../../components/footer";
-
+import Prediction from "./prediction/prediction";
 import CultivationTips from "./cultivationTips/cultivationTips";
 import Account from "./account/account";
 import PotatoesContent from "./potatoesContent/potatoesContent";
-
-import Welcome from "../welcome/welcome"; // methana
+import PotatoesDetail from "./potatoesDetail/potatoesDetail";
 
 const MainForm = () => {
 
-    const [currentPage, setCurrentPage] = useState(null);
+    const [currentPage, setCurrentPage] = useState();
 
     const handleButtonClick = (page) => {
         setCurrentPage(page);
@@ -37,17 +36,22 @@ const MainForm = () => {
 
     const renderPage = () => {
         switch (currentPage) {
-           
             case 'Profile':
                 return <Account/>;
 
+            case 'Prediction':
+                return <Prediction/>;
 
             case 'RecommendedCrops':
-                return <RecommendedCrops/>;
+                return <RecommendedCrops
+                    ON_CLICK_CROP={() => handleButtonClick('YieldPrediction')}
+                />;
 
+            case 'PotatoesDetail':
+                return <PotatoesDetail BACK_TO_CONTENT={() => handleButtonClick('PotatoesContent')}/>;
 
             case 'PotatoesContent':
-                return <PotatoesContent onChangePage={handleButtonClick}/>;
+                return <PotatoesContent onChangePage={handleButtonClick} BACK_TO_MAIN={() => handleButtonClick('CultivationTips')}/>;
 
             case 'CultivationTips':
                 return <CultivationTips
@@ -56,12 +60,14 @@ const MainForm = () => {
                     BTN_BEET={clickCultivationTipsBeet}
                 />;
 
-
-            case 'LogOut':          //methana
-                 return <Welcome/>;
+            case 'YieldPrediction':
+                return <YieldPrediction
+                    ON_CLICK_1={() => handleButtonClick('RecommendedCrops')}
+                    ON_CLICK_2={() => handleButtonClick('RecommendedCrops')}
+                />;
 
             default:
-                return <Account/>;
+                return <RecommendedCrops/>;
         }
     };
 

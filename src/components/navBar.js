@@ -5,7 +5,6 @@ import {
     faBrain,
     faDollar,
     faGaugeHigh,
-    faGear,
     faLightbulb,
     faRightFromBracket,
     faUser
@@ -42,8 +41,7 @@ const NavBar = ({PROFILE_ON_CLICK, PRE_ON_CLICK, REC_ON_CLICK, PRI_ON_CLICK, CUL
 
             <div className={"nav_profile_section flex_center flex_col"}>
                 <img src={nav_accountImg} alt={nav_accountImg} className={"nav_profile_img"}/>
-                <p className={"nav_profile_p"}>YOUR NAME <br/> 071 234 5678 </p>
-                
+                <p className={"nav_profile_p"}> YOUR NAME <br/> 071 234 5678 </p>
             </div>
 
             <div className={"nav_separator"}/>
@@ -72,17 +70,14 @@ const NavBar = ({PROFILE_ON_CLICK, PRE_ON_CLICK, REC_ON_CLICK, PRI_ON_CLICK, CUL
             </div>
             <div className={"nav_separator"}/>
             <div className={"nav_bottom_section"}>
-                
-                <br></br>
-                <br></br>
+
+            <br></br>
+            
+
                 <div className={"nav_account_bottom_button"}>
                     <CustomIconButton ICON={faRightFromBracket} TITLE={commonConfig[selectedLanguage].LOGOUT}/>
                 </div>
 
-                {/* <div className={"nav_account_bottom_button"}>
-                    <CustomIconButton ICON={faGear} TITLE={commonConfig[selectedLanguage].SETTINGS}/>
-                </div> */}
-            
             </div>
         </div>
     )

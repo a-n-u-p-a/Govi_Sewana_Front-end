@@ -1,15 +1,21 @@
-//import React from "react";
 import CustomButton from "./customButton";
 import commonConfig from '../config/commonConfig.json';
-//import {useState} from "react";
 import React, {useEffect, useState} from "react";
 
 const CultivationCard = ({SOURCE_IMG, ALT_IMG, TITLE, BTN_READ_MORE}) => {
-    
+
     const [selectedLanguage, setSelectedLanguage] = useState(() => {
         return localStorage.getItem('selectedLanguage') || 'ENG';
-       });
-    
+    });
+
+    useEffect(() => {
+        const langValue = localStorage.getItem('selectedLanguage');
+        if (langValue !== null) {
+            setSelectedLanguage(langValue)
+        }
+    }, []);
+
+
     return (
         <div className={"custom_cultivation_main flex_center flex_col"}>
 
@@ -22,11 +28,11 @@ const CultivationCard = ({SOURCE_IMG, ALT_IMG, TITLE, BTN_READ_MORE}) => {
             <div className={"custom_cul_separator"}/>
 
             <p className={"custom_cul_p"}>
-            {commonConfig[selectedLanguage].EXPLORE_DESCRIPTION}
+                {commonConfig[selectedLanguage].EXPLORE_DESCRIPTION}
             </p>
 
             <div className={"custom_cul_button_section flex_center"}>
-                <CustomButton BTN_NAME= {commonConfig[selectedLanguage].READ_MORE_BUTTON}  CLASS_NAME={"customButton custom_cul_button"} ON_CLICK={BTN_READ_MORE}/>
+                <CustomButton BTN_NAME={commonConfig[selectedLanguage].READ_MORE_BUTTON} CLASS_NAME={"customButton custom_cul_button"} ON_CLICK={BTN_READ_MORE}/>
             </div>
 
         </div>

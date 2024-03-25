@@ -1,6 +1,9 @@
 .cul_main_section {
     width: 100%;
     height: 85%;
+    background-image: url("../../../assets/images/tips page 1.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .cul_header_section {

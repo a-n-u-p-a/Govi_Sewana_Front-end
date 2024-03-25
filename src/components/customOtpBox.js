@@ -1,9 +1,9 @@
 import React from "react";
 
-const CustomOtpBox = ({NAME, VALUE}) => {
+const CustomOtpBox = ({NAME, VALUE, ON_CHANGE}) => {
     return(
         <div className={"container customOtpBoxMainSection"}>
-            <input type="number" className={"customOtpBox"} name={NAME} value={VALUE}/>
+            <input type="number" className={"customOtpBox"} onChange={ON_CHANGE} name={NAME} value={VALUE}/>
         </div>
     )
 }

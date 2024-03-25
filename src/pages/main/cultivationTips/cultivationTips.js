@@ -1,6 +1,6 @@
 import React from "react";
 import './cultivationTips.css';
-import {useState} from "react";
+import {useState,useEffect} from "react";
 import commonConfig from '../../../config/commonConfig.json';
 import potatoImg from '../../../assets/images/potato.png';
 import carrotImg from '../../../assets/images/carrot.png';
@@ -10,8 +10,15 @@ import CultivationCard from "../../../components/cultivationCard";
 const CultivationTips = ({BTN_POTATO, BTN_CARROT, BTN_BEET}) => {
 
     const [selectedLanguage, setSelectedLanguage] = useState(() => {
-      return localStorage.getItem('selectedLanguage') || 'ENG';
-     });
+        return localStorage.getItem('selectedLanguage') || 'ENG';
+    });
+
+    useEffect(() => {
+        const langValue = localStorage.getItem('selectedLanguage');
+        if (langValue !== null) {
+            setSelectedLanguage(langValue)
+        }
+    }, []);
 
     return (
         <div className={"container cul_main_section flex_col"}>
@@ -23,7 +30,7 @@ const CultivationTips = ({BTN_POTATO, BTN_CARROT, BTN_BEET}) => {
             <div className={"cul_content_section flex_center flex_col"}>
 
                 <div className={"cul_content_title flex_align"}>
-                    <h2>{commonConfig[selectedLanguage].TIPS_FOR_CROPS }</h2>
+                    <h2> {commonConfig[selectedLanguage].TIPS_FOR_CROPS }</h2>
                 </div>
 
                 <div className={"cul_content_card_section flex_center"}>
@@ -33,7 +40,7 @@ const CultivationTips = ({BTN_POTATO, BTN_CARROT, BTN_BEET}) => {
                             SOURCE_IMG={potatoImg}
                             ALT_IMG={potatoImg}
                             TITLE={commonConfig[selectedLanguage].POTATO}
-                            BTN_READ_MORE={BTN_POTATO }
+                            BTN_READ_MORE={BTN_POTATO}
                         />
                     </div>
 
@@ -54,11 +61,8 @@ const CultivationTips = ({BTN_POTATO, BTN_CARROT, BTN_BEET}) => {
                             TITLE={commonConfig[selectedLanguage].BEETROOT}
                         />
                     </div>
-
                 </div>
-
             </div>
-
         </div>
     )
 }

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import React, {useState} from "react";
 import './welcome.css';
 import wel_Logo from '../../assets/images/logo.png';
 import wel_Name_Logo from '../../assets/images/govisewana.png';
@@ -10,18 +10,7 @@ import {useNavigate} from "react-router-dom";
 const Welcome = () => {
 
     const navigate = useNavigate();
-
     const [selectedLanguage, setSelectedLanguage] = useState(localStorage.getItem('selectedLanguage') || 'ENG');
-
-    useEffect(() => {
-        getValues();
-    }, []);
-
-    
-
-    const getValues = () => {
-        console.log(selectedLanguage)
-    }
 
     const handleSelectChange = (event) => {
         const newLanguage = event.target.value;
@@ -76,10 +65,7 @@ const Welcome = () => {
                         CLASS_NAME={"customButton wel_button"}
                         ON_CLICK={loadingAuth}/>
                 </div>
-
-
             </div>
-
         </div>
     )
 }
