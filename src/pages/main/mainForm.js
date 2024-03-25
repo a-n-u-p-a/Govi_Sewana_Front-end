@@ -12,7 +12,7 @@ import PotatoesDetail from "./potatoesDetail/potatoesDetail";
 
 const MainForm = () => {
 
-    const [currentPage, setCurrentPage] = useState(null);
+    const [currentPage, setCurrentPage] = useState();
 
     const handleButtonClick = (page) => {
         setCurrentPage(page);
@@ -39,20 +39,19 @@ const MainForm = () => {
             case 'Profile':
                 return <Account/>;
 
-            case 'YieldPrediction':
-                return <YieldPrediction/>;
-
             case 'Prediction':
                 return <Prediction/>;
 
             case 'RecommendedCrops':
-                return <RecommendedCrops/>;
+                return <RecommendedCrops
+                    ON_CLICK_CROP={() => handleButtonClick('YieldPrediction')}
+                />;
 
             case 'PotatoesDetail':
-                return <PotatoesDetail/>;
+                return <PotatoesDetail BACK_TO_CONTENT={() => handleButtonClick('PotatoesContent')}/>;
 
             case 'PotatoesContent':
-                return <PotatoesContent onChangePage={handleButtonClick}/>;
+                return <PotatoesContent onChangePage={handleButtonClick} BACK_TO_MAIN={() => handleButtonClick('CultivationTips')}/>;
 
             case 'CultivationTips':
                 return <CultivationTips
@@ -61,8 +60,14 @@ const MainForm = () => {
                     BTN_BEET={clickCultivationTipsBeet}
                 />;
 
+            case 'YieldPrediction':
+                return <YieldPrediction
+                    ON_CLICK_1={() => handleButtonClick('RecommendedCrops')}
+                    ON_CLICK_2={() => handleButtonClick('RecommendedCrops')}
+                />;
+
             default:
-                return <Account/>;
+                return <RecommendedCrops/>;
         }
     };
 

@@ -7,6 +7,7 @@ import CustomInput from "../../components/customInput";
 import {FaMobileAlt} from "react-icons/fa";
 import {useNavigate} from "react-router-dom";
 import commonConfig from '../../config/commonConfig.json';
+import Swal from "sweetalert2";
 
 const SignIn = ({goToSignUp}) => {
 
@@ -26,11 +27,11 @@ const SignIn = ({goToSignUp}) => {
     const navigate = useNavigate();
 
     const handleInputChange = (e) => {
-        setMobileNumber("+94"+e.target.value);
+        setMobileNumber("+94" + e.target.value);
     }
 
-    let postData ={
-        "Mobile-Number": mobileNumber,
+    let postData = {
+        "Mobile_Number": mobileNumber,
     };
 
     // const goToOtp = () => {
@@ -43,35 +44,52 @@ const SignIn = ({goToSignUp}) => {
             const response = await fetch(url, {
                 method: 'POST',
                 headers: {
-                'Content-Type': 'application/json'
+                    'Content-Type': 'application/json'
                 },
-                body: JSON.stringify(postData) 
-        });
+                body: JSON.stringify(postData)
+            });
 
-        alert(postData["Mobile-Number"])
-    
-        if(response.ok){
-        console.log("OTP sent successfully!");
-        navigate('/otp', { replace: true, state: { mobileNumber: mobileNumber } }); 
-        }else{
-        alert('user is not registered')
-        }
+            alert(postData["Mobile_Number"])
 
+            if (response.ok) {
+                const responseData = await response.json();   // Parse the JSON from the response
+                console.log("OTP sent successfully!");
+                localStorage.setItem('Username', responseData['Username'])
+                postData = {
+                    "Mobile_Number": mobileNumber,
+                    "Username": responseData["Username"]
+                }
+                navigate('/otp', {replace: true, state: {postData: postData}});
+            } else {
+                await Swal.fire({
+                    icon: "error",
+                    title: "Oops...",
+                    text: "User Is Not Registered",
+                    footer: '<a href="#">Please try again?</a>'
+                });
+            }
         } catch (err) {
-        console.error('Network error:', err);
-        alert("Network error. Please try again."); 
+            console.error('Network error:', err);
+            await Swal.fire({
+                icon: "error",
+                title: "Oops...",
+                text: "Network Error",
+                footer: '<a href="#">Please try again?</a>'
+            });
         }
     }
 
     const signInFunction = () => {
-
         const mobileNumberRegex = /^(?:\+?94)?(?:0|94)?[1-9]\d{8}$/;
-            if (mobileNumberRegex.test(mobileNumber)) {
-                handleButtonClick()
-            } else {
-                alert('InValid MobileNumber')
-            }
-           
+        if (mobileNumberRegex.test(mobileNumber)) {
+            handleButtonClick()
+        } else {
+            Swal.fire({
+                title: "Invalid Field",
+                text: "please enter valid mobile number",
+                icon: "question"
+            });
+        }
     }
 
     return (
@@ -80,7 +98,8 @@ const SignIn = ({goToSignUp}) => {
 
             <div className={"sign_text_section flex_center"}>
                 <CustomInput LABEL_NAME={commonConfig[selectedLanguage].MOBILE_NO}
-                             PLACEHOLDER={commonConfig[selectedLanguage].ENTER_NO} icon={FaMobileAlt} ON_CHANGE={handleInputChange}/>
+                             PLACEHOLDER={commonConfig[selectedLanguage].ENTER_NO} icon={FaMobileAlt}
+                             ON_CHANGE={handleInputChange}/>
             </div>
 
             <div className={"signIn_button_section flex_center"}>

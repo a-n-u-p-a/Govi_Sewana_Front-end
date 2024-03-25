@@ -1,6 +1,9 @@
 .otp_main_section {
     width: 100vw;
     height: 100vh;
+    background-image: url("../../assets/images/otp_bg.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .ot_top_section {
@@ -60,9 +63,4 @@
 .otp_span1 {
     color: #009658;
     font-weight: bold;
-}
-
-.otp_span:hover {
-    text-decoration: underline;
-    color: #ffffff ;
 }

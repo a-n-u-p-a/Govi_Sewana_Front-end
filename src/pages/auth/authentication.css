@@ -2,6 +2,9 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    background-image: url("../../assets/images/sign up.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .auth_side_section {
@@ -42,7 +45,7 @@
 }
 
 .auth_border {
-    border: 1px solid darkgray;
+    /*border: 1px solid darkgray;*/
 }
 
 .sign_main_section {
@@ -58,5 +61,4 @@
 .sign_p {
     font-weight: 400;
 }
-
 
