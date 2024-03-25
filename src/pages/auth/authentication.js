@@ -22,6 +22,7 @@ const Authentication = () => {
         return localStorage.getItem('selectedLanguage') || 'ENG';
     });
 
+
     useEffect(() => {
         const langValue = localStorage.getItem('selectedLanguage');
         if (langValue !== null) {

@@ -1,6 +1,6 @@
 import React from "react";
 import './prediction.css';
-import {useState,useEffect} from "react";
+import {useState, useEffect} from "react";
 import commonConfig from '../../../config/commonConfig.json';
 
 import {
@@ -14,7 +14,7 @@ import {
     Legend,
 } from 'chart.js';
 
-import { Line } from 'react-chartjs-2';
+import {Line} from 'react-chartjs-2';
 
 ChartJS.register(
     CategoryScale,
@@ -40,12 +40,13 @@ const Prediction = () => {
         }
     }, []);
 
+
     // Initialize the useStates
     const [cropType, setCropType] = useState("");
     const [yearMonth, setYearMonth] = useState("");
     const [priceData, setPriceData] = useState("");
 
-    
+
     // Initialize an empty array to store the data
     const weekPrices = [];
 
@@ -68,18 +69,15 @@ const Prediction = () => {
                 pointRadius: 5,  // Set the radius of data points
                 pointHoverRadius: 7, // Set the hover radius of data points
                 pointBackgroundColor: 'rgba(255, 99, 132, 1)', // Color of data points 
-            },    
+            },
         ],
     };
 
     const getChartTitle = () => {
-        // Get the crop type translation
         const cropTranslation = commonConfig[selectedLanguage][cropType] || cropType; // Fallback to the English name if no translation exists
-        // Get the fully translated title template and replace the placeholder
         const titleTemplate = commonConfig[selectedLanguage].HISTORIC_FORECAST;
         return titleTemplate.replace("{cropType}", cropTranslation);
     };
-
 
     const options = {
         responsive: true,
@@ -89,7 +87,7 @@ const Prediction = () => {
             },
             title: {
                 display: true,
-                text: getChartTitle(),
+                text: getChartTitle,
             },
         },
         scales: {
@@ -100,7 +98,6 @@ const Prediction = () => {
     };
 
 
-
     let userInputData = {
         "Crop_Type": cropType,
         "Year_Month": yearMonth
@@ -108,9 +105,10 @@ const Prediction = () => {
 
     function handleButtonClick() {
         fetchData();
+
         async function fetchData() {
             try {
-                let url = 'https://govi-sewana-back-end-final-3yc5uvvuza-uc.a.run.app/pricePrediction/predictor/';
+                let url = 'https://govi-sewana-back-end-final-3yc5uvvuza-uc.a.run.app/pricePrediction/predictPrice/';
                 let response = await fetch(url, {
                     method: 'POST',
                     headers: {
@@ -123,17 +121,17 @@ const Prediction = () => {
                 if (response.ok) {
                     let result = await response.json();
                     setPriceData(result);
-                    //console.log(priceData);
+                    console.log(priceData);
                 } else {
-                    console.error('Error sending data:',response.status);
-                };
+                    console.error('Error sending data:', response.status);
+                }
             } catch (err) {
-                console.error('Network error:',err);
+                console.error('Network error:', err);
             }
         }
     }
 
-    
+
     return (
         <div className={"container pre_main_section flex_col"}>
 
@@ -149,7 +147,7 @@ const Prediction = () => {
                     <div className="crop-input-group flex_col flex_justify">
                         <label className="crop-label">{commonConfig[selectedLanguage].CROP_NAME}</label>
                         <select className="crop-select crop_select_custom"
-                        onChange={(e) => setCropType(e.target.value)}>
+                                onChange={(e) => setCropType(e.target.value)}>
                             <option value="">...</option>
                             <option value="Carrot">{commonConfig[selectedLanguage].DROPDOWN_CAR}</option>
                             <option value="Potato">{commonConfig[selectedLanguage].DROPDOWN_POTA}</option>
@@ -160,17 +158,18 @@ const Prediction = () => {
                     <div className="crop-input-group crop_space1 flex_col flex_justify">
                         <label className="crop-label">{commonConfig[selectedLanguage].YEAR_MONTH}</label>
                         <input type="month" className="crop-input"
-                        onChange={(e) => setYearMonth(e.target.value)}/>
+                               onChange={(e) => setYearMonth(e.target.value)}/>
                     </div>
 
-                    <button className="crop-button crop_space1" onClick={handleButtonClick}>{commonConfig[selectedLanguage].BTN_SUBMIT}</button>
+                    <button className="crop-button crop_space1"
+                            onClick={handleButtonClick}>{commonConfig[selectedLanguage].BTN_SUBMIT}</button>
 
                 </div>
-  
+
             </div>
 
             <div className={"pre_tbl_section flex_center"}>
-                <Line options={options} data={chartData} className={"res_chart"} />
+                <Line options={options} data={chartData} className={"res_chart"}/>
 
             </div>
 

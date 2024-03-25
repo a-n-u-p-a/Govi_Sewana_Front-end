@@ -1,6 +1,6 @@
-import React, {useEffect,useState} from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUp, faArrowDown , faEquals } from '@fortawesome/free-solid-svg-icons';
+import React, {useEffect, useState} from 'react';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faArrowUp, faArrowDown, faEquals} from '@fortawesome/free-solid-svg-icons';
 import commonConfig from '../config/commonConfig.json';
 
 const TableComponentPotato = () => {
@@ -8,7 +8,6 @@ const TableComponentPotato = () => {
     const [selectedLanguage, setSelectedLanguage] = useState(() => {
         return localStorage.getItem('selectedLanguage') || 'ENG';
     });
-
 
     const [tableRecord, setTableRecord] = useState({});
 
@@ -23,7 +22,7 @@ const TableComponentPotato = () => {
         }
 
         fetchTabeleData(); // Run fetchTabeleData only once when the component mounts
-    }, []);
+    }, [fetchTabeleData]);
 
     async function fetchTabeleData() {
         try {
@@ -42,10 +41,10 @@ const TableComponentPotato = () => {
                 setTableRecord(result);
                 //console.log(tableRecord);
             } else {
-                console.error('Error sending data:',response.status);
+                console.error('Error sending data:', response.status);
             }
         } catch (err) {
-            console.error('Network error:',err);
+            console.error('Network error:', err);
         }
     }
 
@@ -58,52 +57,56 @@ const TableComponentPotato = () => {
     }
 
 
-    const getColorClass = (totyield,demand) => {
+    const getColorClass = (totyield, demand) => {
         const totyieldValue = parseInt(totyield);
         const cropDemand = parseInt(demand)
         if (totyieldValue < cropDemand) {
+            sessionStorage.setItem('excess_pot', null);
             return 'excess-green';
         } else if (totyieldValue > cropDemand) {
+            sessionStorage.setItem('excess_pot', 'RED');
             return 'excess-red';
         } else if (totyieldValue === cropDemand) {
+            sessionStorage.setItem('excess_pot', null);
             return 'excess-blue';
-        }    
+        }
     };
 
-    
 
     return (
-        <table className="table">
-            <thead className="table-header">
-            <tr>
-                <th className="table-cell">{commonConfig[selectedLanguage].TB_WEEKNO}</th>
-                <th className="table-cell">{commonConfig[selectedLanguage].TB_TOTAL_YIELD}</th>
-                <th className="table-cell">{commonConfig[selectedLanguage].TB_TOTAL_DEMAND}</th>
-                <th className="table-cell">{commonConfig[selectedLanguage].TB_INEXCESS}</th>
-            </tr>
-            </thead>
-            <tbody className="table-body">
-            {data.map((item, index) => (
-                <tr key={index}>
-                    <td className="table-cell">{item.Week_No}</td>
-                    <td className="table-cell">{item.Total_Yield}</td>
-                    <td className="table-cell">{item.Crop_Demand}</td>
-                    <td className="table-cell">
-                            <span className={`excess-badge ${getColorClass(item.Total_Yield,item.Crop_Demand)}`}>
+        <div className="table-container">
+            <table className="table">
+                <thead className="table-header">
+                <tr>
+                    <th className="table-cell">{commonConfig[selectedLanguage].TB_WEEKNO}</th>
+                    <th className="table-cell">{commonConfig[selectedLanguage].TB_TOTAL_YIELD}</th>
+                    <th className="table-cell">{commonConfig[selectedLanguage].TB_TOTAL_DEMAND}</th>
+                    <th className="table-cell">{commonConfig[selectedLanguage].TB_INEXCESS}</th>
+                </tr>
+                </thead>
+                <tbody className="table-body">
+                {data.map((item, index) => (
+                    <tr key={index}>
+                        <td className="table-cell">{item.Week_No}</td>
+                        <td className="table-cell">{item.Total_Yield}</td>
+                        <td className="table-cell">{item.Crop_Demand}</td>
+                        <td className="table-cell">
+                            <span className={`excess-badge ${getColorClass(item.Total_Yield, item.Crop_Demand)}`}>
                                 {parseInt(item.Total_Yield) > parseInt(item.Crop_Demand) ? (
-                                    <FontAwesomeIcon icon={faArrowUp} className="arrow-icon" />
+                                    <FontAwesomeIcon icon={faArrowDown} className="arrow-icon"/>
                                 ) : parseInt(item.Total_Yield) < parseInt(item.Crop_Demand) ? (
-                                    <FontAwesomeIcon icon={faArrowDown} className="arrow-icon" />
+                                    <FontAwesomeIcon icon={faArrowUp} className="arrow-icon"/>
                                 ) : (
-                                    <FontAwesomeIcon icon={faEquals} className="arrow-icon" />
+                                    <FontAwesomeIcon icon={faEquals} className="arrow-icon"/>
                                 )}
                                 {item.In_Excess}
                             </span>
-                    </td>
-                </tr>
-            ))}
-            </tbody>
-        </table>
+                        </td>
+                    </tr>
+                ))}
+                </tbody>
+            </table>
+        </div>
     );
 };
 
