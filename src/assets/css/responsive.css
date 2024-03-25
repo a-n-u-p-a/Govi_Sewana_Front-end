@@ -1,10 +1,57 @@
+/*UPDATE =============================================================================================================*/
+/*============================================================================================================ WELCOME*/
+@media only screen and (min-device-width: 375px) and (max-device-width: 404px) {
+    .wel_title_2{
+        height: 100px;
+    }
+
+    .wel_button {
+        font-size: 1rem!important;
+    }
+}
+@media only screen and (min-device-width: 769px) and (max-device-width: 996px) {
+    .res_wel_sin_tam_eng{
+        font-size: 0.8rem!important;
+    }
+}
+/*============================================================================================================ WELCOME*/
+
+/*=============================================================================================================== AUTH*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 600px) {
+    .sign_text_section{
+        height: 80px!important;
+    }
+}
+@media only screen and (min-device-width: 601px) and (max-device-width: 768px) {
+    .sign_text_section{
+        height: 80px!important;
+    }
+}
+/*=============================================================================================================== AUTH*/
+
+/*============================================================================================================ ACCOUNT*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 550px) {
+    .acc_text_section{
+        height: 70px!important;
+    }
+}
+@media only screen and (min-device-width: 551px) and (max-device-width: 1024px) {
+    .acc_text_section{
+        height: 70px!important;
+    }
+}
+/*============================================================================================================ ACCOUNT*/
+
+/*UPDATE =============================================================================================================*/
+
+
+
 /*RESPONSIVE =========================================================================================================*/
 @media only screen and (max-width: 1024px) {
     .customInputLabel {
-        height: 45% !important;
+        /*height: 45% !important;*/
     }
 }
-
 /*YieldPrediction===================================*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 425px) {
 
@@ -30,7 +77,6 @@
     .crop-input {
         width: 189px;
     }
-
 
     .res_crop_yie {
         flex-direction: column;
@@ -91,9 +137,7 @@
     }
 
 }
-
 /*YieldPrediction===================================*/
-
 /*Recommend============================*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
     .rec_top_section {
@@ -119,7 +163,6 @@
         font-size: 13px;
     }
 }
-
 @media only screen and (min-device-width: 501px) and (max-device-width: 600px) {
     .rec_top_section {
         font-size: 0.7rem;
@@ -140,7 +183,6 @@
         height: 400px;
     }
 }
-
 @media only screen and (min-device-width: 601px) and (max-device-width: 768px) {
     .rec_top_section {
         font-size: 0.8rem;
@@ -156,7 +198,6 @@
         height: 400px;
     }
 }
-
 @media only screen and (min-device-width: 769px) and (max-device-width: 1000px) {
     .rec_top_section {
         font-size: 0.8rem;
@@ -171,7 +212,6 @@
         font-size: 12px;
     }
 }
-
 @media only screen and (min-device-width: 1001px) and (max-device-width: 1100px) {
     .rec_top_section {
         font-size: 0.8rem;
@@ -186,16 +226,12 @@
         font-size: 13px;
     }
 }
-
 @media only screen and (min-device-width: 1101px) and (max-device-width: 1200px) {
     .custom_card_data {
         font-size: 14px;
     }
 }
-
 /*Recommend============================*/
-
-
 /*PRICE============================*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
     .pre_header {
@@ -211,10 +247,7 @@
     }
 
 }
-
 /*PRICE============================*/
-
-
 /*CULTIVATION====================================*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 400px) {
     .cul_header_section {
@@ -254,7 +287,6 @@
     }
 
 }
-
 @media only screen and (min-device-width: 401px) and (max-device-width: 500px) {
     .cul_header_section {
         font-size: 10px;
@@ -291,7 +323,6 @@
     }
 
 }
-
 @media only screen and (min-device-width: 501px) and (max-device-width: 600px) {
     .cul_header_section {
         font-size: 10px;
@@ -328,7 +359,6 @@
     }
 
 }
-
 @media only screen and (min-device-width: 601px) and (max-device-width: 768px) {
     .cul_header_section {
         font-size: 10px;
@@ -365,7 +395,6 @@
     }
 
 }
-
 @media only screen and (min-device-width: 769px) and (max-device-width: 1024px) {
     .cul_header_section {
         font-size: 10px;
@@ -403,7 +432,6 @@
     }
 
 }
-
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1266px) {
     .cul_header_section {
         font-size: 10px;
@@ -441,14 +469,11 @@
     }
 
 }
-
 /*CULTIVATION====================================*/
-
-
 /*CULTIVATION CONTENT============================*/
 @media only screen and (min-device-width: 320px) and (max-device-width: 500px) {
 
-    .pot_content_main_section{
+    .pot_content_main_section {
         height: 60% !important;
     }
 
@@ -467,12 +492,12 @@
         margin-left: 5% !important;
     }
 
-    .res_cul_detail{
+    .res_cul_detail {
         width: 90% !important;
         font-size: 14px;
     }
 
-    .res_cul_detail_2{
+    .res_cul_detail_2 {
         border-radius: 15px;
     }
 
@@ -486,10 +511,7 @@
         font-size: 10px;
     }
 }
-
 /*CULTIVATION CONTENT============================*/
-
-
 @media only screen and (min-device-width: 1025px) and (max-device-width: 1500px) {
     /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
     .acc_side_section {
@@ -527,9 +549,7 @@
 
     /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
 }
-
 @media only screen and (min-device-width: 601px) and (max-device-width: 768px) {
-
     /*AUTHENTICATION =================================================================================================*/
     .auth_side_section {
         width: 100%;
@@ -561,12 +581,6 @@
         font-size: 1.2rem;
     }
 
-    .sign_text_section {
-        width: 80% !important;
-        height: 10% !important;
-    }
-
-
     .customInputField {
         font-size: 0.8rem;
     }
@@ -586,7 +600,6 @@
     /*AUTHENTICATION =================================================================================================*/
 
 }
-
 @media only screen and (max-width: 768px) {
     /*WELCOME SCREEN -------------------------------------------------------------------------------------------------*/
     .wel_name_logo {
@@ -606,12 +619,12 @@
         font-size: 1rem !important;
     }
 }
-
 @media only screen and (max-width: 600px) {
 
     /*AUTHENTICATION =================================================================================================*/
     .auth_main_section {
         flex-direction: column;
+        overflow-y: auto!important;
     }
 
     .auth_side_section {
@@ -691,7 +704,6 @@
 
     /*WELCOME SCREEN -------------------------------------------------------------------------------------------------*/
 }
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     .main_form_nav_bar_section {
         width: 0 !important;
@@ -747,7 +759,6 @@
         font-size: 0.5rem;
     }
 }
-
 @media only screen and (min-device-width: 501px) and (max-device-width: 768px) {
     .foLogo {
         height: 50%;
@@ -765,7 +776,6 @@
         font-size: 0.8rem;
     }
 }
-
 @media only screen and (min-device-width: 769px) and (max-device-width: 1200px) {
     .nav_main_section {
         font-size: 0.7rem;
@@ -814,7 +824,6 @@
         font-size: 0.6rem;
     }
 }
-
 @media only screen and (min-device-width: 901px) and (max-device-width: 1200px) {
     .nav_main_section {
         font-size: 0.8rem;
@@ -828,7 +837,6 @@
         height: 45%;
     }
 }
-
 /*OTP / */
 @media only screen and (min-device-width: 1201px) and (max-device-width: 1535px) {
     /*OTP ============================================================================================================*/
@@ -843,7 +851,6 @@
     /*OTP ============================================================================================================*/
 
 }
-
 @media only screen and (min-device-width: 769px) and (max-device-width: 1200px) {
     /*OTP ============================================================================================================*/
     .ot_top_section {
@@ -882,7 +889,6 @@
     /*OTP ============================================================================================================*/
 
 }
-
 @media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
     /*OTP ============================================================================================================*/
     .ot_top_section {
@@ -913,7 +919,6 @@
     /*OTP ============================================================================================================*/
 
 }
-
 /*ACCOUNT / */
 @media only screen and (min-device-width: 550px) and (max-device-width: 1024px) {
     /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
@@ -951,13 +956,14 @@
 
     /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
 }
-
 /*ACCOUNT / */
 @media only screen and (min-device-width: 320px) and (max-device-width: 549px) {
 
     /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
     .acc_main_section {
+        height: 900px!important;
         flex-direction: column;
+        overflow-y: auto!important;
     }
 
     .acc_side_section {
@@ -967,7 +973,8 @@
 
     .acc_form_section {
         width: 80% !important;
-        height: 95% !important;
+        height: 400px!important;
+        margin: 10px;
     }
 
     .acc_p {
@@ -997,5 +1004,4 @@
     /*ACCOUNT SCREEN -------------------------------------------------------------------------------------------------*/
 
 }
-
 /*RESPONSIVE =========================================================================================================*/

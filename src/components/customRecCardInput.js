@@ -10,7 +10,7 @@ const CustomRecCardInput = ({TITLE, VALUE}) => {
             </div>
 
             <div className={"custom_rec_card_data_set flex_align"}>
-                <h4> {VALUE} Kg</h4>
+                <h4> {VALUE}T</h4>
             </div>
 
         </div>

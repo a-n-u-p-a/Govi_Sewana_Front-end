@@ -1,6 +1,9 @@
 .yie_main_section {
     width: 100%;
     height: auto;
+    background-image: url("../../../assets/images/table page horizontal.png");
+    background-position: center;
+    background-size: cover;
 }
 
 .yie_sub_main{
